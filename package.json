@@ -1,0 +1,46 @@
+{
+  "name": "gasper_dominus_api",
+  "version": "1.0.0",
+  "description": "API_specs_for_Gasper_Dominus_the_ecosystems_master__Handles_authentication_creation_management_of_applications_and_databases_and_also_provides_a_superuser_API__The_superuser_API_is_only_available_for_those_user_accounts_which_has_is_admin_set_to_true_in_the_mongoDB_database_used_by_Gasper__Apart_from_that_a_default_superuser_is_created_every_time_a_Gasper_instance_is_launched_whose__credentials_are_defined_in_the_admin_section_of_config_toml_the_main_configuration_file__A_sample_configuration_file_is_available_in_the__Gasper_GitHub_Repository_https__github_com_sdslabs_gasper_under_the_name_of_config_sample_toml_brbrNote__Normally_the_applications_and_databases_can_only_be_managed_by_their_owners_but_the_superuser_can_bypass_that_check_",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "prepack": "npm run build",
+    "test": "mocha --compilers js:@babel/register --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "@babel/cli": "^7.0.0",
+    "superagent": "3.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-do-expressions": "^7.0.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-bind": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-logical-assignment-operators": "^7.0.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^5.2.0",
+    "sinon": "^7.2.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
