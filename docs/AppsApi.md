@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**fetchAppByUser**](AppsApi.md#fetchAppByUser) | **GET** /apps/{app} | Fetch a single application owned by a user
 [**fetchAppsByUser**](AppsApi.md#fetchAppsByUser) | **GET** /apps | Fetch all applications owned by a user
 [**fetchLogsByUser**](AppsApi.md#fetchLogsByUser) | **GET** /apps/{app}/logs | Fetch logs of an application
-[**rebuildAppByUser**](AppsApi.md#rebuildAppByUser) | **GET** /apps/{app}/rebuild | Rebuild an application
+[**rebuildAppByUser**](AppsApi.md#rebuildAppByUser) | **PATCH** /apps/{app}/rebuild | Rebuild an application
 [**updateAppByUser**](AppsApi.md#updateAppByUser) | **PUT** /apps/{app} | Update an application owned by a user
 
 
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ## fetchLogsByUser
 
-> InlineResponse2004 fetchLogsByUser(authorization, app)
+> InlineResponse2004 fetchLogsByUser(authorization, app, opts)
 
 Fetch logs of an application
 
@@ -224,7 +224,10 @@ bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 let apiInstance = new GasperDominusApi.AppsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
 let app = "app_example"; // String | The name of the application
-apiInstance.fetchLogsByUser(authorization, app).then((data) => {
+let opts = {
+  'tail': 3 // Number | Fetch the last **n** logs (Fetches all logs if not specified)
+};
+apiInstance.fetchLogsByUser(authorization, app, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -239,6 +242,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **authorization** | **String**| Bearer Token Authentication | 
  **app** | **String**| The name of the application | 
+ **tail** | **Number**| Fetch the last **n** logs (Fetches all logs if not specified) | [optional] 
 
 ### Return type
 

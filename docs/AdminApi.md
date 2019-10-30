@@ -15,6 +15,8 @@ Method | HTTP request | Description
 [**fetchNodesByAdmin**](AdminApi.md#fetchNodesByAdmin) | **GET** /admin/nodes | Fetch bind addresses(IP:Port) of all microservices on all nodes
 [**fetchUserByAdmin**](AdminApi.md#fetchUserByAdmin) | **GET** /admin/users/{userEmail} | Fetch a single user
 [**fetchUsersByAdmin**](AdminApi.md#fetchUsersByAdmin) | **GET** /admin/users | Fetch all users with/without a filter defined by query params
+[**grantSuperuserPrivilege**](AdminApi.md#grantSuperuserPrivilege) | **PATCH** /admin/users/{userEmail}/grant | Grant superuser privileges to a single user
+[**revokeSuperuserPrivilege**](AdminApi.md#revokeSuperuserPrivilege) | **PATCH** /admin/users/{userEmail}/revoke | Revoke superuser privileges from a single user
 
 
 
@@ -565,6 +567,102 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**InlineResponse2007**](InlineResponse2007.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## grantSuperuserPrivilege
+
+> InlineResponse2003 grantSuperuserPrivilege(authorization, userEmail)
+
+Grant superuser privileges to a single user
+
+### Example
+
+```javascript
+import GasperDominusApi from 'gasper_dominus_api';
+let defaultClient = GasperDominusApi.ApiClient.instance;
+// Configure Bearer (JWT) access token for authorization: bearerAuth
+let bearerAuth = defaultClient.authentications['bearerAuth'];
+bearerAuth.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new GasperDominusApi.AdminApi();
+let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
+let userEmail = "userEmail_example"; // String | Email ID of the user
+apiInstance.grantSuperuserPrivilege(authorization, userEmail).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **authorization** | **String**| Bearer Token Authentication | 
+ **userEmail** | **String**| Email ID of the user | 
+
+### Return type
+
+[**InlineResponse2003**](InlineResponse2003.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## revokeSuperuserPrivilege
+
+> InlineResponse2003 revokeSuperuserPrivilege(authorization, userEmail)
+
+Revoke superuser privileges from a single user
+
+### Example
+
+```javascript
+import GasperDominusApi from 'gasper_dominus_api';
+let defaultClient = GasperDominusApi.ApiClient.instance;
+// Configure Bearer (JWT) access token for authorization: bearerAuth
+let bearerAuth = defaultClient.authentications['bearerAuth'];
+bearerAuth.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new GasperDominusApi.AdminApi();
+let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
+let userEmail = "userEmail_example"; // String | Email ID of the user
+apiInstance.revokeSuperuserPrivilege(authorization, userEmail).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **authorization** | **String**| Bearer Token Authentication | 
+ **userEmail** | **String**| Email ID of the user | 
+
+### Return type
+
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 

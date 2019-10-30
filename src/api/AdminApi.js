@@ -1,6 +1,6 @@
 /**
  * Gasper Dominus API
- * API specs for Gasper Dominus, the ecosystem's master. Handles authentication, creation/management of applications and databases and also provides a superuser API. The superuser API is only available for those user accounts which has `is_admin` set to `true` in the mongoDB database used by Gasper. Apart from that, a default superuser is created every time a Gasper instance is launched whose  credentials are defined in the `admin` section of `config.toml`, the main configuration file. A sample configuration file is available in the [Gasper GitHub Repository](https://github.com/sdslabs/gasper) under the name of `config.sample.toml`.<br><br> **Note:-** Normally the applications and databases can only be managed by their owners but the superuser can bypass that check.
+ * API documentation for Gasper Dominus, the ecosystem's master. Handles authentication, creation/management of applications, databases, users and also provides a superuser API. <br><br> Only a superuser can avail the superuser API. A superuser can **grant/revoke** superuser privileges to other users. A default  superuser is created every time a Gasper instance is launched whose credentials are defined in the `admin` section of `config.toml`, the main configuration file. A sample configuration file is available in the [Gasper GitHub Repository](https://github.com/sdslabs/gasper)  under the name of `config.sample.toml`.<br><br> **Note:-** Normally the applications and databases can only be managed by their owners but the superuser can bypass that check.
  *
  * The version of the OpenAPI document: 1.0
  * Contact: contact@sdslabs.co.in
@@ -649,6 +649,112 @@ export default class AdminApi {
      */
     fetchUsersByAdmin(authorization, opts) {
       return this.fetchUsersByAdminWithHttpInfo(authorization, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * Grant superuser privileges to a single user
+     * @param {String} authorization Bearer Token Authentication
+     * @param {String} userEmail Email ID of the user
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
+     */
+    grantSuperuserPrivilegeWithHttpInfo(authorization, userEmail) {
+      let postBody = null;
+      // verify the required parameter 'authorization' is set
+      if (authorization === undefined || authorization === null) {
+        throw new Error("Missing the required parameter 'authorization' when calling grantSuperuserPrivilege");
+      }
+      // verify the required parameter 'userEmail' is set
+      if (userEmail === undefined || userEmail === null) {
+        throw new Error("Missing the required parameter 'userEmail' when calling grantSuperuserPrivilege");
+      }
+
+      let pathParams = {
+        'userEmail': userEmail
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+        'Authorization': authorization
+      };
+      let formParams = {
+      };
+
+      let authNames = ['bearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = InlineResponse2003;
+      return this.apiClient.callApi(
+        '/admin/users/{userEmail}/grant', 'PATCH',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Grant superuser privileges to a single user
+     * @param {String} authorization Bearer Token Authentication
+     * @param {String} userEmail Email ID of the user
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
+     */
+    grantSuperuserPrivilege(authorization, userEmail) {
+      return this.grantSuperuserPrivilegeWithHttpInfo(authorization, userEmail)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * Revoke superuser privileges from a single user
+     * @param {String} authorization Bearer Token Authentication
+     * @param {String} userEmail Email ID of the user
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
+     */
+    revokeSuperuserPrivilegeWithHttpInfo(authorization, userEmail) {
+      let postBody = null;
+      // verify the required parameter 'authorization' is set
+      if (authorization === undefined || authorization === null) {
+        throw new Error("Missing the required parameter 'authorization' when calling revokeSuperuserPrivilege");
+      }
+      // verify the required parameter 'userEmail' is set
+      if (userEmail === undefined || userEmail === null) {
+        throw new Error("Missing the required parameter 'userEmail' when calling revokeSuperuserPrivilege");
+      }
+
+      let pathParams = {
+        'userEmail': userEmail
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+        'Authorization': authorization
+      };
+      let formParams = {
+      };
+
+      let authNames = ['bearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = InlineResponse2003;
+      return this.apiClient.callApi(
+        '/admin/users/{userEmail}/revoke', 'PATCH',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Revoke superuser privileges from a single user
+     * @param {String} authorization Bearer Token Authentication
+     * @param {String} userEmail Email ID of the user
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
+     */
+    revokeSuperuserPrivilege(authorization, userEmail) {
+      return this.revokeSuperuserPrivilegeWithHttpInfo(authorization, userEmail)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
