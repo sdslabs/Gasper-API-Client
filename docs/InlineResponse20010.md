@@ -5,6 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] 
-**message** | **String** |  | [optional] 
+**username** | **String** |  | [optional] 
+**email** | **String** |  | [optional] 
+**admin** | **Boolean** |  | [optional] 
 
 

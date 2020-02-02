@@ -60,44 +60,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property kaze (base name: "kaze")', function() {
-      // uncomment below and update the code to test the property kaze
-      //var instane = new GasperKazeApi.InlineResponse20013();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property enrai (base name: "enrai")', function() {
-      // uncomment below and update the code to test the property enrai
-      //var instane = new GasperKazeApi.InlineResponse20013();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property hikari (base name: "hikari")', function() {
-      // uncomment below and update the code to test the property hikari
-      //var instane = new GasperKazeApi.InlineResponse20013();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property mizu (base name: "mizu")', function() {
-      // uncomment below and update the code to test the property mizu
-      //var instane = new GasperKazeApi.InlineResponse20013();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property mongodb (base name: "mongodb")', function() {
-      // uncomment below and update the code to test the property mongodb
-      //var instane = new GasperKazeApi.InlineResponse20013();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property mysql (base name: "mysql")', function() {
-      // uncomment below and update the code to test the property mysql
-      //var instane = new GasperKazeApi.InlineResponse20013();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property iwa (base name: "iwa")', function() {
-      // uncomment below and update the code to test the property iwa
+    it('should have the property data (base name: "data")', function() {
+      // uncomment below and update the code to test the property data
       //var instane = new GasperKazeApi.InlineResponse20013();
       //expect(instance).to.be();
     });

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **git** | [**Git**](Git.md) |  | [optional] 
 **context** | [**Context**](Context.md) |  | [optional] 
 **env** | **{String: String}** | Environment variables required by the application | [optional] 
-**resources** | [**InlineResponse2001Resources**](InlineResponse2001Resources.md) |  | [optional] 
+**resources** | [**InlineResponse2002Resources**](InlineResponse2002Resources.md) |  | [optional] 
 **containerId** | **String** | ID of the application&#39;s docker container | [optional] 
 **containerPort** | **Number** | Port assigned by the node to the application&#39;s docker container | [optional] 
 **dockerImage** | **String** | Docker image used in building the application&#39;s container | [optional] 

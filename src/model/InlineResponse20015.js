@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The InlineResponse20012 model module.
- * @module model/InlineResponse20012
+ * The InlineResponse20015 model module.
+ * @module model/InlineResponse20015
  * @version 1.0
  */
-class InlineResponse20012 {
+class InlineResponse20015 {
     /**
-     * Constructs a new <code>InlineResponse20012</code>.
-     * @alias module:model/InlineResponse20012
+     * Constructs a new <code>InlineResponse20015</code>.
+     * @alias module:model/InlineResponse20015
      */
     constructor() { 
         
-        InlineResponse20012.initialize(this);
+        InlineResponse20015.initialize(this);
     }
 
     /**
@@ -37,21 +37,21 @@ class InlineResponse20012 {
     }
 
     /**
-     * Constructs a <code>InlineResponse20012</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>InlineResponse20015</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/InlineResponse20012} obj Optional instance to populate.
-     * @return {module:model/InlineResponse20012} The populated <code>InlineResponse20012</code> instance.
+     * @param {module:model/InlineResponse20015} obj Optional instance to populate.
+     * @return {module:model/InlineResponse20015} The populated <code>InlineResponse20015</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new InlineResponse20012();
+            obj = obj || new InlineResponse20015();
 
             if (data.hasOwnProperty('success')) {
                 obj['success'] = ApiClient.convertToType(data['success'], 'Boolean');
             }
-            if (data.hasOwnProperty('message')) {
-                obj['message'] = ApiClient.convertToType(data['message'], 'String');
+            if (data.hasOwnProperty('kaze')) {
+                obj['kaze'] = ApiClient.convertToType(data['kaze'], ['String']);
             }
         }
         return obj;
@@ -71,17 +71,17 @@ class InlineResponse20012 {
         this['success'] = success;
     }
 /**
-     * @return {String}
+     * @return {Array.<String>}
      */
-    getMessage() {
-        return this.message;
+    getKaze() {
+        return this.kaze;
     }
 
     /**
-     * @param {String} message
+     * @param {Array.<String>} kaze
      */
-    setMessage(message) {
-        this['message'] = message;
+    setKaze(kaze) {
+        this['kaze'] = kaze;
     }
 
 }
@@ -89,17 +89,17 @@ class InlineResponse20012 {
 /**
  * @member {Boolean} success
  */
-InlineResponse20012.prototype['success'] = undefined;
+InlineResponse20015.prototype['success'] = undefined;
 
 /**
- * @member {String} message
+ * @member {Array.<String>} kaze
  */
-InlineResponse20012.prototype['message'] = undefined;
+InlineResponse20015.prototype['kaze'] = undefined;
 
 
 
 
 
 
-export default InlineResponse20012;
+export default InlineResponse20015;
 

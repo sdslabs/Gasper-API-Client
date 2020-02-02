@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## createDB
 
-> InlineResponse2007 createDB(authorization, databaseType, opts)
+> InlineResponse2008 createDB(authorization, databaseType, opts)
 
 Create a database
 
@@ -22,10 +22,6 @@ Create a database
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.DbsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -52,11 +48,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**InlineResponse2008**](InlineResponse2008.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -66,7 +62,7 @@ Name | Type | Description  | Notes
 
 ## deleteDbByUser
 
-> InlineResponse2003 deleteDbByUser(authorization, db)
+> InlineResponse2004 deleteDbByUser(authorization, db)
 
 Delete a single database owned by a user
 
@@ -74,10 +70,6 @@ Delete a single database owned by a user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.DbsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -100,11 +92,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -114,7 +106,7 @@ Name | Type | Description  | Notes
 
 ## fetchDbByUser
 
-> InlineResponse2008 fetchDbByUser(authorization, db)
+> InlineResponse2009 fetchDbByUser(authorization, db)
 
 Fetch a single database owned by a user
 
@@ -122,10 +114,6 @@ Fetch a single database owned by a user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.DbsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -148,11 +136,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2008**](InlineResponse2008.md)
+[**InlineResponse2009**](InlineResponse2009.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -162,7 +150,7 @@ Name | Type | Description  | Notes
 
 ## fetchDbsByUser
 
-> InlineResponse2008 fetchDbsByUser(authorization)
+> InlineResponse2009 fetchDbsByUser(authorization)
 
 Fetch all databases owned by a user
 
@@ -170,10 +158,6 @@ Fetch all databases owned by a user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.DbsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -194,11 +178,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2008**](InlineResponse2008.md)
+[**InlineResponse2009**](InlineResponse2009.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -208,7 +192,7 @@ Name | Type | Description  | Notes
 
 ## transferDbByUser
 
-> InlineResponse2003 transferDbByUser(authorization, db, userEmail)
+> InlineResponse2004 transferDbByUser(authorization, db, userEmail)
 
 Transfer ownership of a database to another user
 
@@ -216,10 +200,6 @@ Transfer ownership of a database to another user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.DbsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -244,11 +224,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 

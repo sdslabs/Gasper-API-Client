@@ -14,12 +14,12 @@
 
 import ApiClient from "../ApiClient";
 import Application from '../model/Application';
-import InlineResponse2001 from '../model/InlineResponse2001';
 import InlineResponse2002 from '../model/InlineResponse2002';
 import InlineResponse2003 from '../model/InlineResponse2003';
 import InlineResponse2004 from '../model/InlineResponse2004';
 import InlineResponse2005 from '../model/InlineResponse2005';
 import InlineResponse2006 from '../model/InlineResponse2006';
+import InlineResponse2007 from '../model/InlineResponse2007';
 import InlineResponse400 from '../model/InlineResponse400';
 import InlineResponse401 from '../model/InlineResponse401';
 import InlineResponse500 from '../model/InlineResponse500';
@@ -49,7 +49,7 @@ export default class AppsApi {
      * @param {String} authorization Bearer Token Authentication
      * @param {module:model/String} language The programming language in which the application is written
      * @param {module:model/Application} application 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2001} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2002} and HTTP response
      */
     createAppWithHttpInfo(authorization, language, application) {
       let postBody = application;
@@ -77,10 +77,10 @@ export default class AppsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2001;
+      let returnType = InlineResponse2002;
       return this.apiClient.callApi(
         '/apps/{language}', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -93,7 +93,7 @@ export default class AppsApi {
      * @param {String} authorization Bearer Token Authentication
      * @param {module:model/String} language The programming language in which the application is written
      * @param {module:model/Application} application 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2001}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2002}
      */
     createApp(authorization, language, application) {
       return this.createAppWithHttpInfo(authorization, language, application)
@@ -107,7 +107,7 @@ export default class AppsApi {
      * Delete an application owned by a user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2004} and HTTP response
      */
     deleteAppByUserWithHttpInfo(authorization, app) {
       let postBody = null;
@@ -131,10 +131,10 @@ export default class AppsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2003;
+      let returnType = InlineResponse2004;
       return this.apiClient.callApi(
         '/apps/{app}', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -146,7 +146,7 @@ export default class AppsApi {
      * Delete an application owned by a user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2004}
      */
     deleteAppByUser(authorization, app) {
       return this.deleteAppByUserWithHttpInfo(authorization, app)
@@ -160,7 +160,7 @@ export default class AppsApi {
      * Fetch a single application owned by a user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2002} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
      */
     fetchAppByUserWithHttpInfo(authorization, app) {
       let postBody = null;
@@ -184,10 +184,10 @@ export default class AppsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2002;
+      let returnType = InlineResponse2003;
       return this.apiClient.callApi(
         '/apps/{app}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -199,7 +199,7 @@ export default class AppsApi {
      * Fetch a single application owned by a user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2002}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
      */
     fetchAppByUser(authorization, app) {
       return this.fetchAppByUserWithHttpInfo(authorization, app)
@@ -212,7 +212,7 @@ export default class AppsApi {
     /**
      * Fetch all applications owned by a user
      * @param {String} authorization Bearer Token Authentication
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2002} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
      */
     fetchAppsByUserWithHttpInfo(authorization) {
       let postBody = null;
@@ -231,10 +231,10 @@ export default class AppsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2002;
+      let returnType = InlineResponse2003;
       return this.apiClient.callApi(
         '/apps', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -245,7 +245,7 @@ export default class AppsApi {
     /**
      * Fetch all applications owned by a user
      * @param {String} authorization Bearer Token Authentication
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2002}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
      */
     fetchAppsByUser(authorization) {
       return this.fetchAppsByUserWithHttpInfo(authorization)
@@ -261,7 +261,7 @@ export default class AppsApi {
      * @param {String} app The name of the application
      * @param {Object} opts Optional parameters
      * @param {Number} opts.tail Fetch the last **n** logs (Fetches all logs if not specified)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2005} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2006} and HTTP response
      */
     fetchLogsByUserWithHttpInfo(authorization, app, opts) {
       opts = opts || {};
@@ -287,10 +287,10 @@ export default class AppsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2005;
+      let returnType = InlineResponse2006;
       return this.apiClient.callApi(
         '/apps/{app}/logs', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -304,7 +304,7 @@ export default class AppsApi {
      * @param {String} app The name of the application
      * @param {Object} opts Optional parameters
      * @param {Number} opts.tail Fetch the last **n** logs (Fetches all logs if not specified)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2005}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2006}
      */
     fetchLogsByUser(authorization, app, opts) {
       return this.fetchLogsByUserWithHttpInfo(authorization, app, opts)
@@ -327,7 +327,7 @@ export default class AppsApi {
      * @param {Number} opts.months Fetch metrics in the last **n** months
      * @param {Number} opts.years Fetch metrics in the last **n** years
      * @param {Number} opts.decades Fetch metrics in the last **n** decades
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2006} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2007} and HTTP response
      */
     fetchMetricsByUserWithHttpInfo(authorization, app, opts) {
       opts = opts || {};
@@ -360,10 +360,10 @@ export default class AppsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2006;
+      let returnType = InlineResponse2007;
       return this.apiClient.callApi(
         '/apps/{app}/metrics', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -384,7 +384,7 @@ export default class AppsApi {
      * @param {Number} opts.months Fetch metrics in the last **n** months
      * @param {Number} opts.years Fetch metrics in the last **n** years
      * @param {Number} opts.decades Fetch metrics in the last **n** decades
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2006}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2007}
      */
     fetchMetricsByUser(authorization, app, opts) {
       return this.fetchMetricsByUserWithHttpInfo(authorization, app, opts)
@@ -398,7 +398,7 @@ export default class AppsApi {
      * Fetch a browser terminal instance for an application owned by a user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2004} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2005} and HTTP response
      */
     fetchTerminalByUserWithHttpInfo(authorization, app) {
       let postBody = null;
@@ -422,10 +422,10 @@ export default class AppsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2004;
+      let returnType = InlineResponse2005;
       return this.apiClient.callApi(
         '/apps/{app}/term', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -437,7 +437,7 @@ export default class AppsApi {
      * Fetch a browser terminal instance for an application owned by a user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2004}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2005}
      */
     fetchTerminalByUser(authorization, app) {
       return this.fetchTerminalByUserWithHttpInfo(authorization, app)
@@ -451,7 +451,7 @@ export default class AppsApi {
      * Rebuild an application
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2001} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2002} and HTTP response
      */
     rebuildAppByUserWithHttpInfo(authorization, app) {
       let postBody = null;
@@ -475,10 +475,10 @@ export default class AppsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2001;
+      let returnType = InlineResponse2002;
       return this.apiClient.callApi(
         '/apps/{app}/rebuild', 'PATCH',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -490,7 +490,7 @@ export default class AppsApi {
      * Rebuild an application
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2001}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2002}
      */
     rebuildAppByUser(authorization, app) {
       return this.rebuildAppByUserWithHttpInfo(authorization, app)
@@ -505,7 +505,7 @@ export default class AppsApi {
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
      * @param {String} userEmail Email ID of the user
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2004} and HTTP response
      */
     transferAppByUserWithHttpInfo(authorization, app, userEmail) {
       let postBody = null;
@@ -534,10 +534,10 @@ export default class AppsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2003;
+      let returnType = InlineResponse2004;
       return this.apiClient.callApi(
         '/apps/{app}/transfer/{userEmail}', 'PATCH',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -550,7 +550,7 @@ export default class AppsApi {
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
      * @param {String} userEmail Email ID of the user
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2004}
      */
     transferAppByUser(authorization, app, userEmail) {
       return this.transferAppByUserWithHttpInfo(authorization, app, userEmail)
@@ -565,7 +565,7 @@ export default class AppsApi {
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
      * @param {module:model/Application} application 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2001} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2002} and HTTP response
      */
     updateAppByUserWithHttpInfo(authorization, app, application) {
       let postBody = application;
@@ -593,10 +593,10 @@ export default class AppsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2001;
+      let returnType = InlineResponse2002;
       return this.apiClient.callApi(
         '/apps/{app}', 'PUT',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -609,7 +609,7 @@ export default class AppsApi {
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
      * @param {module:model/Application} application 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2001}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2002}
      */
     updateAppByUser(authorization, app, application) {
       return this.updateAppByUserWithHttpInfo(authorization, app, application)

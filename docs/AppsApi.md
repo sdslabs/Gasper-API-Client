@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 ## createApp
 
-> InlineResponse2001 createApp(authorization, language, application)
+> InlineResponse2002 createApp(authorization, language, application)
 
 Create an application
 
@@ -27,10 +27,6 @@ Create an application
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AppsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -55,11 +51,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -69,7 +65,7 @@ Name | Type | Description  | Notes
 
 ## deleteAppByUser
 
-> InlineResponse2003 deleteAppByUser(authorization, app)
+> InlineResponse2004 deleteAppByUser(authorization, app)
 
 Delete an application owned by a user
 
@@ -77,10 +73,6 @@ Delete an application owned by a user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AppsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -103,11 +95,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -117,7 +109,7 @@ Name | Type | Description  | Notes
 
 ## fetchAppByUser
 
-> InlineResponse2002 fetchAppByUser(authorization, app)
+> InlineResponse2003 fetchAppByUser(authorization, app)
 
 Fetch a single application owned by a user
 
@@ -125,10 +117,6 @@ Fetch a single application owned by a user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AppsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -151,11 +139,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -165,7 +153,7 @@ Name | Type | Description  | Notes
 
 ## fetchAppsByUser
 
-> InlineResponse2002 fetchAppsByUser(authorization)
+> InlineResponse2003 fetchAppsByUser(authorization)
 
 Fetch all applications owned by a user
 
@@ -173,10 +161,6 @@ Fetch all applications owned by a user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AppsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -197,11 +181,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -211,7 +195,7 @@ Name | Type | Description  | Notes
 
 ## fetchLogsByUser
 
-> InlineResponse2005 fetchLogsByUser(authorization, app, opts)
+> InlineResponse2006 fetchLogsByUser(authorization, app, opts)
 
 Fetch logs of an application
 
@@ -219,10 +203,6 @@ Fetch logs of an application
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AppsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -249,11 +229,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**InlineResponse2006**](InlineResponse2006.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -263,7 +243,7 @@ Name | Type | Description  | Notes
 
 ## fetchMetricsByUser
 
-> InlineResponse2006 fetchMetricsByUser(authorization, app, opts)
+> InlineResponse2007 fetchMetricsByUser(authorization, app, opts)
 
 Fetch metrics of an application
 
@@ -271,10 +251,6 @@ Fetch metrics of an application
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AppsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -315,11 +291,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2006**](InlineResponse2006.md)
+[**InlineResponse2007**](InlineResponse2007.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -329,7 +305,7 @@ Name | Type | Description  | Notes
 
 ## fetchTerminalByUser
 
-> InlineResponse2004 fetchTerminalByUser(authorization, app)
+> InlineResponse2005 fetchTerminalByUser(authorization, app)
 
 Fetch a browser terminal instance for an application owned by a user
 
@@ -337,10 +313,6 @@ Fetch a browser terminal instance for an application owned by a user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AppsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -363,11 +335,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2004**](InlineResponse2004.md)
+[**InlineResponse2005**](InlineResponse2005.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -377,7 +349,7 @@ Name | Type | Description  | Notes
 
 ## rebuildAppByUser
 
-> InlineResponse2001 rebuildAppByUser(authorization, app)
+> InlineResponse2002 rebuildAppByUser(authorization, app)
 
 Rebuild an application
 
@@ -385,10 +357,6 @@ Rebuild an application
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AppsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -411,11 +379,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -425,7 +393,7 @@ Name | Type | Description  | Notes
 
 ## transferAppByUser
 
-> InlineResponse2003 transferAppByUser(authorization, app, userEmail)
+> InlineResponse2004 transferAppByUser(authorization, app, userEmail)
 
 Transfer ownership of an application to another user
 
@@ -433,10 +401,6 @@ Transfer ownership of an application to another user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AppsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -461,11 +425,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -475,7 +439,7 @@ Name | Type | Description  | Notes
 
 ## updateAppByUser
 
-> InlineResponse2001 updateAppByUser(authorization, app, application)
+> InlineResponse2002 updateAppByUser(authorization, app, application)
 
 Update an application owned by a user
 
@@ -483,10 +447,6 @@ Update an application owned by a user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AppsApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -511,11 +471,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 

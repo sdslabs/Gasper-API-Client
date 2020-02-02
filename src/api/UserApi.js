@@ -16,7 +16,7 @@ import ApiClient from "../ApiClient";
 import InlineObject from '../model/InlineObject';
 import InlineResponse20010 from '../model/InlineResponse20010';
 import InlineResponse20011 from '../model/InlineResponse20011';
-import InlineResponse2009 from '../model/InlineResponse2009';
+import InlineResponse20012 from '../model/InlineResponse20012';
 import InlineResponse400 from '../model/InlineResponse400';
 import InlineResponse401 from '../model/InlineResponse401';
 import InlineResponse500 from '../model/InlineResponse500';
@@ -44,7 +44,7 @@ export default class UserApi {
     /**
      * Delete user
      * @param {String} authorization Bearer Token Authentication
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20010} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20011} and HTTP response
      */
     deleteUserWithHttpInfo(authorization) {
       let postBody = null;
@@ -63,10 +63,10 @@ export default class UserApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse20010;
+      let returnType = InlineResponse20011;
       return this.apiClient.callApi(
         '/user', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -77,7 +77,7 @@ export default class UserApi {
     /**
      * Delete user
      * @param {String} authorization Bearer Token Authentication
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20010}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20011}
      */
     deleteUser(authorization) {
       return this.deleteUserWithHttpInfo(authorization)
@@ -90,7 +90,7 @@ export default class UserApi {
     /**
      * Fetch logged in user's info
      * @param {String} authorization Bearer Token Authentication
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2009} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20010} and HTTP response
      */
     fetchUserWithHttpInfo(authorization) {
       let postBody = null;
@@ -109,10 +109,10 @@ export default class UserApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2009;
+      let returnType = InlineResponse20010;
       return this.apiClient.callApi(
         '/user', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -123,7 +123,7 @@ export default class UserApi {
     /**
      * Fetch logged in user's info
      * @param {String} authorization Bearer Token Authentication
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2009}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20010}
      */
     fetchUser(authorization) {
       return this.fetchUserWithHttpInfo(authorization)
@@ -137,7 +137,7 @@ export default class UserApi {
      * Update the password of the logged in user
      * @param {String} authorization Bearer Token Authentication
      * @param {module:model/InlineObject} inlineObject 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20011} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20012} and HTTP response
      */
     updatePasswordWithHttpInfo(authorization, inlineObject) {
       let postBody = inlineObject;
@@ -160,10 +160,10 @@ export default class UserApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = InlineResponse20011;
+      let returnType = InlineResponse20012;
       return this.apiClient.callApi(
         '/user/password', 'PUT',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -175,7 +175,7 @@ export default class UserApi {
      * Update the password of the logged in user
      * @param {String} authorization Bearer Token Authentication
      * @param {module:model/InlineObject} inlineObject 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20011}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20012}
      */
     updatePassword(authorization, inlineObject) {
       return this.updatePasswordWithHttpInfo(authorization, inlineObject)

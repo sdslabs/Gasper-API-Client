@@ -60,8 +60,104 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property data (base name: "data")', function() {
-      // uncomment below and update the code to test the property data
+    it('should have the property name (base name: "name")', function() {
+      // uncomment below and update the code to test the property name
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property password (base name: "password")', function() {
+      // uncomment below and update the code to test the property password
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property git (base name: "git")', function() {
+      // uncomment below and update the code to test the property git
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property context (base name: "context")', function() {
+      // uncomment below and update the code to test the property context
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property env (base name: "env")', function() {
+      // uncomment below and update the code to test the property env
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property resources (base name: "resources")', function() {
+      // uncomment below and update the code to test the property resources
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property containerId (base name: "container_id")', function() {
+      // uncomment below and update the code to test the property containerId
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property containerPort (base name: "container_port")', function() {
+      // uncomment below and update the code to test the property containerPort
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property dockerImage (base name: "docker_image")', function() {
+      // uncomment below and update the code to test the property dockerImage
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property appUrl (base name: "app_url")', function() {
+      // uncomment below and update the code to test the property appUrl
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property hostIp (base name: "host_ip")', function() {
+      // uncomment below and update the code to test the property hostIp
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property nameServers (base name: "name_servers")', function() {
+      // uncomment below and update the code to test the property nameServers
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property instanceType (base name: "instance_type")', function() {
+      // uncomment below and update the code to test the property instanceType
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property language (base name: "language")', function() {
+      // uncomment below and update the code to test the property language
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property owner (base name: "owner")', function() {
+      // uncomment below and update the code to test the property owner
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property sshCmd (base name: "ssh_cmd")', function() {
+      // uncomment below and update the code to test the property sshCmd
+      //var instane = new GasperKazeApi.InlineResponse2002();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property id (base name: "_id")', function() {
+      // uncomment below and update the code to test the property id
       //var instane = new GasperKazeApi.InlineResponse2002();
       //expect(instance).to.be();
     });

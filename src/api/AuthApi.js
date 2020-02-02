@@ -108,7 +108,7 @@ export default class AuthApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = LoginResponse;

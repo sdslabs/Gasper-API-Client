@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import Metrics from './Metrics';
 
 /**
  * The InlineResponse2006 model module.
@@ -52,7 +51,7 @@ class InlineResponse2006 {
                 obj['success'] = ApiClient.convertToType(data['success'], 'Boolean');
             }
             if (data.hasOwnProperty('data')) {
-                obj['data'] = ApiClient.convertToType(data['data'], [Metrics]);
+                obj['data'] = ApiClient.convertToType(data['data'], ['String']);
             }
         }
         return obj;
@@ -72,14 +71,14 @@ class InlineResponse2006 {
         this['success'] = success;
     }
 /**
-     * @return {Array.<module:model/Metrics>}
+     * @return {Array.<String>}
      */
     getData() {
         return this.data;
     }
 
     /**
-     * @param {Array.<module:model/Metrics>} data
+     * @param {Array.<String>} data
      */
     setData(data) {
         this['data'] = data;
@@ -93,7 +92,7 @@ class InlineResponse2006 {
 InlineResponse2006.prototype['success'] = undefined;
 
 /**
- * @member {Array.<module:model/Metrics>} data
+ * @member {Array.<String>} data
  */
 InlineResponse2006.prototype['data'] = undefined;
 

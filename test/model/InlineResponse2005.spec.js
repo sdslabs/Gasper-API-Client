@@ -60,8 +60,14 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property data (base name: "data")', function() {
-      // uncomment below and update the code to test the property data
+    it('should have the property url (base name: "url")', function() {
+      // uncomment below and update the code to test the property url
+      //var instane = new GasperKazeApi.InlineResponse2005();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property rawUrl (base name: "raw_url")', function() {
+      // uncomment below and update the code to test the property rawUrl
       //var instane = new GasperKazeApi.InlineResponse2005();
       //expect(instance).to.be();
     });

@@ -50,8 +50,11 @@ class InlineResponse2005 {
             if (data.hasOwnProperty('success')) {
                 obj['success'] = ApiClient.convertToType(data['success'], 'Boolean');
             }
-            if (data.hasOwnProperty('data')) {
-                obj['data'] = ApiClient.convertToType(data['data'], ['String']);
+            if (data.hasOwnProperty('url')) {
+                obj['url'] = ApiClient.convertToType(data['url'], 'String');
+            }
+            if (data.hasOwnProperty('raw_url')) {
+                obj['raw_url'] = ApiClient.convertToType(data['raw_url'], 'String');
             }
         }
         return obj;
@@ -71,17 +74,34 @@ class InlineResponse2005 {
         this['success'] = success;
     }
 /**
-     * @return {Array.<String>}
+     * Returns The URL endpoint for accessing the browser terminal instance in the form of domain_name:port
+     * @return {String}
      */
-    getData() {
-        return this.data;
+    getUrl() {
+        return this.url;
     }
 
     /**
-     * @param {Array.<String>} data
+     * Sets The URL endpoint for accessing the browser terminal instance in the form of domain_name:port
+     * @param {String} url The URL endpoint for accessing the browser terminal instance in the form of domain_name:port
      */
-    setData(data) {
-        this['data'] = data;
+    setUrl(url) {
+        this['url'] = url;
+    }
+/**
+     * Returns The URL endpoint for accessing the browser terminal instance in the form of ip_address:port
+     * @return {String}
+     */
+    getRawUrl() {
+        return this.raw_url;
+    }
+
+    /**
+     * Sets The URL endpoint for accessing the browser terminal instance in the form of ip_address:port
+     * @param {String} rawUrl The URL endpoint for accessing the browser terminal instance in the form of ip_address:port
+     */
+    setRawUrl(rawUrl) {
+        this['raw_url'] = rawUrl;
     }
 
 }
@@ -92,9 +112,16 @@ class InlineResponse2005 {
 InlineResponse2005.prototype['success'] = undefined;
 
 /**
- * @member {Array.<String>} data
+ * The URL endpoint for accessing the browser terminal instance in the form of domain_name:port
+ * @member {String} url
  */
-InlineResponse2005.prototype['data'] = undefined;
+InlineResponse2005.prototype['url'] = undefined;
+
+/**
+ * The URL endpoint for accessing the browser terminal instance in the form of ip_address:port
+ * @member {String} raw_url
+ */
+InlineResponse2005.prototype['raw_url'] = undefined;
 
 
 

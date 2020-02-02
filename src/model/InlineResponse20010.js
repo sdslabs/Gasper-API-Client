@@ -50,8 +50,14 @@ class InlineResponse20010 {
             if (data.hasOwnProperty('success')) {
                 obj['success'] = ApiClient.convertToType(data['success'], 'Boolean');
             }
-            if (data.hasOwnProperty('message')) {
-                obj['message'] = ApiClient.convertToType(data['message'], 'String');
+            if (data.hasOwnProperty('username')) {
+                obj['username'] = ApiClient.convertToType(data['username'], 'String');
+            }
+            if (data.hasOwnProperty('email')) {
+                obj['email'] = ApiClient.convertToType(data['email'], 'String');
+            }
+            if (data.hasOwnProperty('admin')) {
+                obj['admin'] = ApiClient.convertToType(data['admin'], 'Boolean');
             }
         }
         return obj;
@@ -73,15 +79,41 @@ class InlineResponse20010 {
 /**
      * @return {String}
      */
-    getMessage() {
-        return this.message;
+    getUsername() {
+        return this.username;
     }
 
     /**
-     * @param {String} message
+     * @param {String} username
      */
-    setMessage(message) {
-        this['message'] = message;
+    setUsername(username) {
+        this['username'] = username;
+    }
+/**
+     * @return {String}
+     */
+    getEmail() {
+        return this.email;
+    }
+
+    /**
+     * @param {String} email
+     */
+    setEmail(email) {
+        this['email'] = email;
+    }
+/**
+     * @return {Boolean}
+     */
+    getAdmin() {
+        return this.admin;
+    }
+
+    /**
+     * @param {Boolean} admin
+     */
+    setAdmin(admin) {
+        this['admin'] = admin;
     }
 
 }
@@ -92,9 +124,19 @@ class InlineResponse20010 {
 InlineResponse20010.prototype['success'] = undefined;
 
 /**
- * @member {String} message
+ * @member {String} username
  */
-InlineResponse20010.prototype['message'] = undefined;
+InlineResponse20010.prototype['username'] = undefined;
+
+/**
+ * @member {String} email
+ */
+InlineResponse20010.prototype['email'] = undefined;
+
+/**
+ * @member {Boolean} admin
+ */
+InlineResponse20010.prototype['admin'] = undefined;
 
 
 

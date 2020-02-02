@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import CreatedUser from './CreatedUser';
 
 /**
  * The InlineResponse20013 model module.
@@ -50,26 +51,8 @@ class InlineResponse20013 {
             if (data.hasOwnProperty('success')) {
                 obj['success'] = ApiClient.convertToType(data['success'], 'Boolean');
             }
-            if (data.hasOwnProperty('kaze')) {
-                obj['kaze'] = ApiClient.convertToType(data['kaze'], ['String']);
-            }
-            if (data.hasOwnProperty('enrai')) {
-                obj['enrai'] = ApiClient.convertToType(data['enrai'], ['String']);
-            }
-            if (data.hasOwnProperty('hikari')) {
-                obj['hikari'] = ApiClient.convertToType(data['hikari'], ['String']);
-            }
-            if (data.hasOwnProperty('mizu')) {
-                obj['mizu'] = ApiClient.convertToType(data['mizu'], ['String']);
-            }
-            if (data.hasOwnProperty('mongodb')) {
-                obj['mongodb'] = ApiClient.convertToType(data['mongodb'], ['String']);
-            }
-            if (data.hasOwnProperty('mysql')) {
-                obj['mysql'] = ApiClient.convertToType(data['mysql'], ['String']);
-            }
-            if (data.hasOwnProperty('iwa')) {
-                obj['iwa'] = ApiClient.convertToType(data['iwa'], ['String']);
+            if (data.hasOwnProperty('data')) {
+                obj['data'] = ApiClient.convertToType(data['data'], [CreatedUser]);
             }
         }
         return obj;
@@ -89,95 +72,17 @@ class InlineResponse20013 {
         this['success'] = success;
     }
 /**
-     * @return {Array.<String>}
+     * @return {Array.<module:model/CreatedUser>}
      */
-    getKaze() {
-        return this.kaze;
+    getData() {
+        return this.data;
     }
 
     /**
-     * @param {Array.<String>} kaze
+     * @param {Array.<module:model/CreatedUser>} data
      */
-    setKaze(kaze) {
-        this['kaze'] = kaze;
-    }
-/**
-     * @return {Array.<String>}
-     */
-    getEnrai() {
-        return this.enrai;
-    }
-
-    /**
-     * @param {Array.<String>} enrai
-     */
-    setEnrai(enrai) {
-        this['enrai'] = enrai;
-    }
-/**
-     * @return {Array.<String>}
-     */
-    getHikari() {
-        return this.hikari;
-    }
-
-    /**
-     * @param {Array.<String>} hikari
-     */
-    setHikari(hikari) {
-        this['hikari'] = hikari;
-    }
-/**
-     * @return {Array.<String>}
-     */
-    getMizu() {
-        return this.mizu;
-    }
-
-    /**
-     * @param {Array.<String>} mizu
-     */
-    setMizu(mizu) {
-        this['mizu'] = mizu;
-    }
-/**
-     * @return {Array.<String>}
-     */
-    getMongodb() {
-        return this.mongodb;
-    }
-
-    /**
-     * @param {Array.<String>} mongodb
-     */
-    setMongodb(mongodb) {
-        this['mongodb'] = mongodb;
-    }
-/**
-     * @return {Array.<String>}
-     */
-    getMysql() {
-        return this.mysql;
-    }
-
-    /**
-     * @param {Array.<String>} mysql
-     */
-    setMysql(mysql) {
-        this['mysql'] = mysql;
-    }
-/**
-     * @return {Array.<String>}
-     */
-    getIwa() {
-        return this.iwa;
-    }
-
-    /**
-     * @param {Array.<String>} iwa
-     */
-    setIwa(iwa) {
-        this['iwa'] = iwa;
+    setData(data) {
+        this['data'] = data;
     }
 
 }
@@ -188,39 +93,9 @@ class InlineResponse20013 {
 InlineResponse20013.prototype['success'] = undefined;
 
 /**
- * @member {Array.<String>} kaze
+ * @member {Array.<module:model/CreatedUser>} data
  */
-InlineResponse20013.prototype['kaze'] = undefined;
-
-/**
- * @member {Array.<String>} enrai
- */
-InlineResponse20013.prototype['enrai'] = undefined;
-
-/**
- * @member {Array.<String>} hikari
- */
-InlineResponse20013.prototype['hikari'] = undefined;
-
-/**
- * @member {Array.<String>} mizu
- */
-InlineResponse20013.prototype['mizu'] = undefined;
-
-/**
- * @member {Array.<String>} mongodb
- */
-InlineResponse20013.prototype['mongodb'] = undefined;
-
-/**
- * @member {Array.<String>} mysql
- */
-InlineResponse20013.prototype['mysql'] = undefined;
-
-/**
- * @member {Array.<String>} iwa
- */
-InlineResponse20013.prototype['iwa'] = undefined;
+InlineResponse20013.prototype['data'] = undefined;
 
 
 

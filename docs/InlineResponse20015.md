@@ -1,10 +1,10 @@
-# GasperKazeApi.InlineResponse2009
+# GasperKazeApi.InlineResponse20015
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] 
-**data** | [**[CreatedDatabase]**](CreatedDatabase.md) |  | [optional] 
+**kaze** | **[String]** |  | [optional] 
 
 

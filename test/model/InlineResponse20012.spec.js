@@ -60,8 +60,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property data (base name: "data")', function() {
-      // uncomment below and update the code to test the property data
+    it('should have the property message (base name: "message")', function() {
+      // uncomment below and update the code to test the property message
       //var instane = new GasperKazeApi.InlineResponse20012();
       //expect(instance).to.be();
     });

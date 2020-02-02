@@ -53,6 +53,24 @@ class InlineResponse20014 {
             if (data.hasOwnProperty('kaze')) {
                 obj['kaze'] = ApiClient.convertToType(data['kaze'], ['String']);
             }
+            if (data.hasOwnProperty('enrai')) {
+                obj['enrai'] = ApiClient.convertToType(data['enrai'], ['String']);
+            }
+            if (data.hasOwnProperty('hikari')) {
+                obj['hikari'] = ApiClient.convertToType(data['hikari'], ['String']);
+            }
+            if (data.hasOwnProperty('mizu')) {
+                obj['mizu'] = ApiClient.convertToType(data['mizu'], ['String']);
+            }
+            if (data.hasOwnProperty('mongodb')) {
+                obj['mongodb'] = ApiClient.convertToType(data['mongodb'], ['String']);
+            }
+            if (data.hasOwnProperty('mysql')) {
+                obj['mysql'] = ApiClient.convertToType(data['mysql'], ['String']);
+            }
+            if (data.hasOwnProperty('iwa')) {
+                obj['iwa'] = ApiClient.convertToType(data['iwa'], ['String']);
+            }
         }
         return obj;
     }
@@ -83,6 +101,84 @@ class InlineResponse20014 {
     setKaze(kaze) {
         this['kaze'] = kaze;
     }
+/**
+     * @return {Array.<String>}
+     */
+    getEnrai() {
+        return this.enrai;
+    }
+
+    /**
+     * @param {Array.<String>} enrai
+     */
+    setEnrai(enrai) {
+        this['enrai'] = enrai;
+    }
+/**
+     * @return {Array.<String>}
+     */
+    getHikari() {
+        return this.hikari;
+    }
+
+    /**
+     * @param {Array.<String>} hikari
+     */
+    setHikari(hikari) {
+        this['hikari'] = hikari;
+    }
+/**
+     * @return {Array.<String>}
+     */
+    getMizu() {
+        return this.mizu;
+    }
+
+    /**
+     * @param {Array.<String>} mizu
+     */
+    setMizu(mizu) {
+        this['mizu'] = mizu;
+    }
+/**
+     * @return {Array.<String>}
+     */
+    getMongodb() {
+        return this.mongodb;
+    }
+
+    /**
+     * @param {Array.<String>} mongodb
+     */
+    setMongodb(mongodb) {
+        this['mongodb'] = mongodb;
+    }
+/**
+     * @return {Array.<String>}
+     */
+    getMysql() {
+        return this.mysql;
+    }
+
+    /**
+     * @param {Array.<String>} mysql
+     */
+    setMysql(mysql) {
+        this['mysql'] = mysql;
+    }
+/**
+     * @return {Array.<String>}
+     */
+    getIwa() {
+        return this.iwa;
+    }
+
+    /**
+     * @param {Array.<String>} iwa
+     */
+    setIwa(iwa) {
+        this['iwa'] = iwa;
+    }
 
 }
 
@@ -95,6 +191,36 @@ InlineResponse20014.prototype['success'] = undefined;
  * @member {Array.<String>} kaze
  */
 InlineResponse20014.prototype['kaze'] = undefined;
+
+/**
+ * @member {Array.<String>} enrai
+ */
+InlineResponse20014.prototype['enrai'] = undefined;
+
+/**
+ * @member {Array.<String>} hikari
+ */
+InlineResponse20014.prototype['hikari'] = undefined;
+
+/**
+ * @member {Array.<String>} mizu
+ */
+InlineResponse20014.prototype['mizu'] = undefined;
+
+/**
+ * @member {Array.<String>} mongodb
+ */
+InlineResponse20014.prototype['mongodb'] = undefined;
+
+/**
+ * @member {Array.<String>} mysql
+ */
+InlineResponse20014.prototype['mysql'] = undefined;
+
+/**
+ * @member {Array.<String>} iwa
+ */
+InlineResponse20014.prototype['iwa'] = undefined;
 
 
 

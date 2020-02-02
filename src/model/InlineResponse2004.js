@@ -50,12 +50,6 @@ class InlineResponse2004 {
             if (data.hasOwnProperty('success')) {
                 obj['success'] = ApiClient.convertToType(data['success'], 'Boolean');
             }
-            if (data.hasOwnProperty('url')) {
-                obj['url'] = ApiClient.convertToType(data['url'], 'String');
-            }
-            if (data.hasOwnProperty('raw_url')) {
-                obj['raw_url'] = ApiClient.convertToType(data['raw_url'], 'String');
-            }
         }
         return obj;
     }
@@ -73,36 +67,6 @@ class InlineResponse2004 {
     setSuccess(success) {
         this['success'] = success;
     }
-/**
-     * Returns The URL endpoint for accessing the browser terminal instance in the form of domain_name:port
-     * @return {String}
-     */
-    getUrl() {
-        return this.url;
-    }
-
-    /**
-     * Sets The URL endpoint for accessing the browser terminal instance in the form of domain_name:port
-     * @param {String} url The URL endpoint for accessing the browser terminal instance in the form of domain_name:port
-     */
-    setUrl(url) {
-        this['url'] = url;
-    }
-/**
-     * Returns The URL endpoint for accessing the browser terminal instance in the form of ip_address:port
-     * @return {String}
-     */
-    getRawUrl() {
-        return this.raw_url;
-    }
-
-    /**
-     * Sets The URL endpoint for accessing the browser terminal instance in the form of ip_address:port
-     * @param {String} rawUrl The URL endpoint for accessing the browser terminal instance in the form of ip_address:port
-     */
-    setRawUrl(rawUrl) {
-        this['raw_url'] = rawUrl;
-    }
 
 }
 
@@ -110,18 +74,6 @@ class InlineResponse2004 {
  * @member {Boolean} success
  */
 InlineResponse2004.prototype['success'] = undefined;
-
-/**
- * The URL endpoint for accessing the browser terminal instance in the form of domain_name:port
- * @member {String} url
- */
-InlineResponse2004.prototype['url'] = undefined;
-
-/**
- * The URL endpoint for accessing the browser terminal instance in the form of ip_address:port
- * @member {String} raw_url
- */
-InlineResponse2004.prototype['raw_url'] = undefined;
 
 
 

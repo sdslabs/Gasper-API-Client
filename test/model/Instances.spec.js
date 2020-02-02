@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new GasperKazeApi.InlineResponse2001();
+    instance = new GasperKazeApi.Instances();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,34 @@
       object[property] = value;
   }
 
-  describe('InlineResponse2001', function() {
-    it('should create an instance of InlineResponse2001', function() {
-      // uncomment below and update the code to test InlineResponse2001
-      //var instane = new GasperKazeApi.InlineResponse2001();
-      //expect(instance).to.be.a(GasperKazeApi.InlineResponse2001);
+  describe('Instances', function() {
+    it('should create an instance of Instances', function() {
+      // uncomment below and update the code to test Instances
+      //var instane = new GasperKazeApi.Instances();
+      //expect(instance).to.be.a(GasperKazeApi.Instances);
     });
 
-    it('should have the property success (base name: "success")', function() {
-      // uncomment below and update the code to test the property success
-      //var instane = new GasperKazeApi.InlineResponse2001();
+    it('should have the property id (base name: "_id")', function() {
+      // uncomment below and update the code to test the property id
+      //var instane = new GasperKazeApi.Instances();
       //expect(instance).to.be();
     });
 
-    it('should have the property data (base name: "data")', function() {
-      // uncomment below and update the code to test the property data
-      //var instane = new GasperKazeApi.InlineResponse2001();
+    it('should have the property name (base name: "name")', function() {
+      // uncomment below and update the code to test the property name
+      //var instane = new GasperKazeApi.Instances();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property instanceType (base name: "instance_type")', function() {
+      // uncomment below and update the code to test the property instanceType
+      //var instane = new GasperKazeApi.Instances();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property language (base name: "language")', function() {
+      // uncomment below and update the code to test the property language
+      //var instane = new GasperKazeApi.Instances();
       //expect(instance).to.be();
     });
 

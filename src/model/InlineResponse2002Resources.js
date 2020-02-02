@@ -14,18 +14,19 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The InlineResponse20012 model module.
- * @module model/InlineResponse20012
+ * The InlineResponse2002Resources model module.
+ * @module model/InlineResponse2002Resources
  * @version 1.0
  */
-class InlineResponse20012 {
+class InlineResponse2002Resources {
     /**
-     * Constructs a new <code>InlineResponse20012</code>.
-     * @alias module:model/InlineResponse20012
+     * Constructs a new <code>InlineResponse2002Resources</code>.
+     * Resources required by the application
+     * @alias module:model/InlineResponse2002Resources
      */
     constructor() { 
         
-        InlineResponse20012.initialize(this);
+        InlineResponse2002Resources.initialize(this);
     }
 
     /**
@@ -37,69 +38,75 @@ class InlineResponse20012 {
     }
 
     /**
-     * Constructs a <code>InlineResponse20012</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>InlineResponse2002Resources</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/InlineResponse20012} obj Optional instance to populate.
-     * @return {module:model/InlineResponse20012} The populated <code>InlineResponse20012</code> instance.
+     * @param {module:model/InlineResponse2002Resources} obj Optional instance to populate.
+     * @return {module:model/InlineResponse2002Resources} The populated <code>InlineResponse2002Resources</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new InlineResponse20012();
+            obj = obj || new InlineResponse2002Resources();
 
-            if (data.hasOwnProperty('success')) {
-                obj['success'] = ApiClient.convertToType(data['success'], 'Boolean');
+            if (data.hasOwnProperty('cpu')) {
+                obj['cpu'] = ApiClient.convertToType(data['cpu'], 'Number');
             }
-            if (data.hasOwnProperty('message')) {
-                obj['message'] = ApiClient.convertToType(data['message'], 'String');
+            if (data.hasOwnProperty('memory')) {
+                obj['memory'] = ApiClient.convertToType(data['memory'], 'Number');
             }
         }
         return obj;
     }
 
 /**
-     * @return {Boolean}
+     * Returns Number of virtual CPUs
+     * @return {Number}
      */
-    getSuccess() {
-        return this.success;
+    getCpu() {
+        return this.cpu;
     }
 
     /**
-     * @param {Boolean} success
+     * Sets Number of virtual CPUs
+     * @param {Number} cpu Number of virtual CPUs
      */
-    setSuccess(success) {
-        this['success'] = success;
+    setCpu(cpu) {
+        this['cpu'] = cpu;
     }
 /**
-     * @return {String}
+     * Returns Memory in GigaBytes (GB)
+     * @return {Number}
      */
-    getMessage() {
-        return this.message;
+    getMemory() {
+        return this.memory;
     }
 
     /**
-     * @param {String} message
+     * Sets Memory in GigaBytes (GB)
+     * @param {Number} memory Memory in GigaBytes (GB)
      */
-    setMessage(message) {
-        this['message'] = message;
+    setMemory(memory) {
+        this['memory'] = memory;
     }
 
 }
 
 /**
- * @member {Boolean} success
+ * Number of virtual CPUs
+ * @member {Number} cpu
  */
-InlineResponse20012.prototype['success'] = undefined;
+InlineResponse2002Resources.prototype['cpu'] = undefined;
 
 /**
- * @member {String} message
+ * Memory in GigaBytes (GB)
+ * @member {Number} memory
  */
-InlineResponse20012.prototype['message'] = undefined;
+InlineResponse2002Resources.prototype['memory'] = undefined;
 
 
 
 
 
 
-export default InlineResponse20012;
+export default InlineResponse2002Resources;
 

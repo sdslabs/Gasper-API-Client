@@ -14,9 +14,9 @@
 
 import ApiClient from "../ApiClient";
 import Database from '../model/Database';
-import InlineResponse2003 from '../model/InlineResponse2003';
-import InlineResponse2007 from '../model/InlineResponse2007';
+import InlineResponse2004 from '../model/InlineResponse2004';
 import InlineResponse2008 from '../model/InlineResponse2008';
+import InlineResponse2009 from '../model/InlineResponse2009';
 import InlineResponse400 from '../model/InlineResponse400';
 import InlineResponse401 from '../model/InlineResponse401';
 import InlineResponse500 from '../model/InlineResponse500';
@@ -47,7 +47,7 @@ export default class DbsApi {
      * @param {module:model/String} databaseType The type of database
      * @param {Object} opts Optional parameters
      * @param {module:model/Database} opts.database 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2007} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2008} and HTTP response
      */
     createDBWithHttpInfo(authorization, databaseType, opts) {
       opts = opts || {};
@@ -72,10 +72,10 @@ export default class DbsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2007;
+      let returnType = InlineResponse2008;
       return this.apiClient.callApi(
         '/dbs/{databaseType}', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -89,7 +89,7 @@ export default class DbsApi {
      * @param {module:model/String} databaseType The type of database
      * @param {Object} opts Optional parameters
      * @param {module:model/Database} opts.database 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2007}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2008}
      */
     createDB(authorization, databaseType, opts) {
       return this.createDBWithHttpInfo(authorization, databaseType, opts)
@@ -103,7 +103,7 @@ export default class DbsApi {
      * Delete a single database owned by a user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} db Name of the database
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2004} and HTTP response
      */
     deleteDbByUserWithHttpInfo(authorization, db) {
       let postBody = null;
@@ -127,10 +127,10 @@ export default class DbsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2003;
+      let returnType = InlineResponse2004;
       return this.apiClient.callApi(
         '/dbs/{db}', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -142,7 +142,7 @@ export default class DbsApi {
      * Delete a single database owned by a user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} db Name of the database
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2004}
      */
     deleteDbByUser(authorization, db) {
       return this.deleteDbByUserWithHttpInfo(authorization, db)
@@ -156,7 +156,7 @@ export default class DbsApi {
      * Fetch a single database owned by a user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} db Name of the database
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2008} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2009} and HTTP response
      */
     fetchDbByUserWithHttpInfo(authorization, db) {
       let postBody = null;
@@ -180,10 +180,10 @@ export default class DbsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2008;
+      let returnType = InlineResponse2009;
       return this.apiClient.callApi(
         '/dbs/{db}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -195,7 +195,7 @@ export default class DbsApi {
      * Fetch a single database owned by a user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} db Name of the database
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2008}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2009}
      */
     fetchDbByUser(authorization, db) {
       return this.fetchDbByUserWithHttpInfo(authorization, db)
@@ -208,7 +208,7 @@ export default class DbsApi {
     /**
      * Fetch all databases owned by a user
      * @param {String} authorization Bearer Token Authentication
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2008} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2009} and HTTP response
      */
     fetchDbsByUserWithHttpInfo(authorization) {
       let postBody = null;
@@ -227,10 +227,10 @@ export default class DbsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2008;
+      let returnType = InlineResponse2009;
       return this.apiClient.callApi(
         '/dbs', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -241,7 +241,7 @@ export default class DbsApi {
     /**
      * Fetch all databases owned by a user
      * @param {String} authorization Bearer Token Authentication
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2008}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2009}
      */
     fetchDbsByUser(authorization) {
       return this.fetchDbsByUserWithHttpInfo(authorization)
@@ -256,7 +256,7 @@ export default class DbsApi {
      * @param {String} authorization Bearer Token Authentication
      * @param {String} db Name of the database
      * @param {String} userEmail Email ID of the user
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2004} and HTTP response
      */
     transferDbByUserWithHttpInfo(authorization, db, userEmail) {
       let postBody = null;
@@ -285,10 +285,10 @@ export default class DbsApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2003;
+      let returnType = InlineResponse2004;
       return this.apiClient.callApi(
         '/dbs/{db}/transfer/{userEmail}', 'PATCH',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -301,7 +301,7 @@ export default class DbsApi {
      * @param {String} authorization Bearer Token Authentication
      * @param {String} db Name of the database
      * @param {String} userEmail Email ID of the user
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2004}
      */
     transferDbByUser(authorization, db, userEmail) {
       return this.transferDbByUserWithHttpInfo(authorization, db, userEmail)

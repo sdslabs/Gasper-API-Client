@@ -60,56 +60,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
-      //var instane = new GasperKazeApi.InlineResponse2007();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property password (base name: "password")', function() {
-      // uncomment below and update the code to test the property password
-      //var instane = new GasperKazeApi.InlineResponse2007();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property user (base name: "user")', function() {
-      // uncomment below and update the code to test the property user
-      //var instane = new GasperKazeApi.InlineResponse2007();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property owner (base name: "owner")', function() {
-      // uncomment below and update the code to test the property owner
-      //var instane = new GasperKazeApi.InlineResponse2007();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property dbUrl (base name: "db_url")', function() {
-      // uncomment below and update the code to test the property dbUrl
-      //var instane = new GasperKazeApi.InlineResponse2007();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property hostIp (base name: "host_ip")', function() {
-      // uncomment below and update the code to test the property hostIp
-      //var instane = new GasperKazeApi.InlineResponse2007();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property port (base name: "port")', function() {
-      // uncomment below and update the code to test the property port
-      //var instane = new GasperKazeApi.InlineResponse2007();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property instanceType (base name: "instance_type")', function() {
-      // uncomment below and update the code to test the property instanceType
-      //var instane = new GasperKazeApi.InlineResponse2007();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property language (base name: "language")', function() {
-      // uncomment below and update the code to test the property language
+    it('should have the property data (base name: "data")', function() {
+      // uncomment below and update the code to test the property data
       //var instane = new GasperKazeApi.InlineResponse2007();
       //expect(instance).to.be();
     });

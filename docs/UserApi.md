@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 ## deleteUser
 
-> InlineResponse20010 deleteUser(authorization)
+> InlineResponse20011 deleteUser(authorization)
 
 Delete user
 
@@ -20,10 +20,6 @@ Delete user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.UserApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -44,11 +40,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20010**](InlineResponse20010.md)
+[**InlineResponse20011**](InlineResponse20011.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -58,7 +54,7 @@ Name | Type | Description  | Notes
 
 ## fetchUser
 
-> InlineResponse2009 fetchUser(authorization)
+> InlineResponse20010 fetchUser(authorization)
 
 Fetch logged in user&#39;s info
 
@@ -66,10 +62,6 @@ Fetch logged in user&#39;s info
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.UserApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -90,11 +82,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**InlineResponse20010**](InlineResponse20010.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -104,7 +96,7 @@ Name | Type | Description  | Notes
 
 ## updatePassword
 
-> InlineResponse20011 updatePassword(authorization, inlineObject)
+> InlineResponse20012 updatePassword(authorization, inlineObject)
 
 Update the password of the logged in user
 
@@ -112,10 +104,6 @@ Update the password of the logged in user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.UserApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -138,11 +126,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20011**](InlineResponse20011.md)
+[**InlineResponse20012**](InlineResponse20012.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 

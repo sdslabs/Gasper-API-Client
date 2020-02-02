@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import CreatedDatabase from './CreatedDatabase';
 
 /**
  * The InlineResponse2008 model module.
@@ -51,8 +50,32 @@ class InlineResponse2008 {
             if (data.hasOwnProperty('success')) {
                 obj['success'] = ApiClient.convertToType(data['success'], 'Boolean');
             }
-            if (data.hasOwnProperty('data')) {
-                obj['data'] = ApiClient.convertToType(data['data'], [CreatedDatabase]);
+            if (data.hasOwnProperty('name')) {
+                obj['name'] = ApiClient.convertToType(data['name'], 'String');
+            }
+            if (data.hasOwnProperty('password')) {
+                obj['password'] = ApiClient.convertToType(data['password'], 'String');
+            }
+            if (data.hasOwnProperty('user')) {
+                obj['user'] = ApiClient.convertToType(data['user'], 'String');
+            }
+            if (data.hasOwnProperty('owner')) {
+                obj['owner'] = ApiClient.convertToType(data['owner'], 'String');
+            }
+            if (data.hasOwnProperty('db_url')) {
+                obj['db_url'] = ApiClient.convertToType(data['db_url'], 'String');
+            }
+            if (data.hasOwnProperty('host_ip')) {
+                obj['host_ip'] = ApiClient.convertToType(data['host_ip'], 'String');
+            }
+            if (data.hasOwnProperty('port')) {
+                obj['port'] = ApiClient.convertToType(data['port'], 'String');
+            }
+            if (data.hasOwnProperty('instance_type')) {
+                obj['instance_type'] = ApiClient.convertToType(data['instance_type'], 'String');
+            }
+            if (data.hasOwnProperty('language')) {
+                obj['language'] = ApiClient.convertToType(data['language'], 'String');
             }
         }
         return obj;
@@ -72,17 +95,139 @@ class InlineResponse2008 {
         this['success'] = success;
     }
 /**
-     * @return {Array.<module:model/CreatedDatabase>}
+     * Returns Name of the database
+     * @return {String}
      */
-    getData() {
-        return this.data;
+    getName() {
+        return this.name;
     }
 
     /**
-     * @param {Array.<module:model/CreatedDatabase>} data
+     * Sets Name of the database
+     * @param {String} name Name of the database
      */
-    setData(data) {
-        this['data'] = data;
+    setName(name) {
+        this['name'] = name;
+    }
+/**
+     * Returns Password of the database
+     * @return {String}
+     */
+    getPassword() {
+        return this.password;
+    }
+
+    /**
+     * Sets Password of the database
+     * @param {String} password Password of the database
+     */
+    setPassword(password) {
+        this['password'] = password;
+    }
+/**
+     * Returns Username of the database
+     * @return {String}
+     */
+    getUser() {
+        return this.user;
+    }
+
+    /**
+     * Sets Username of the database
+     * @param {String} user Username of the database
+     */
+    setUser(user) {
+        this['user'] = user;
+    }
+/**
+     * Returns Owner of the database
+     * @return {String}
+     */
+    getOwner() {
+        return this.owner;
+    }
+
+    /**
+     * Sets Owner of the database
+     * @param {String} owner Owner of the database
+     */
+    setOwner(owner) {
+        this['owner'] = owner;
+    }
+/**
+     * Returns The domain name of the database (DNS entry is managed by Hikari 💡)
+     * @return {String}
+     */
+    getDbUrl() {
+        return this.db_url;
+    }
+
+    /**
+     * Sets The domain name of the database (DNS entry is managed by Hikari 💡)
+     * @param {String} dbUrl The domain name of the database (DNS entry is managed by Hikari 💡)
+     */
+    setDbUrl(dbUrl) {
+        this['db_url'] = dbUrl;
+    }
+/**
+     * Returns IPv4 address of the node where the database is deployed
+     * @return {String}
+     */
+    getHostIp() {
+        return this.host_ip;
+    }
+
+    /**
+     * Sets IPv4 address of the node where the database is deployed
+     * @param {String} hostIp IPv4 address of the node where the database is deployed
+     */
+    setHostIp(hostIp) {
+        this['host_ip'] = hostIp;
+    }
+/**
+     * Returns Port on which the database server is running
+     * @return {String}
+     */
+    getPort() {
+        return this.port;
+    }
+
+    /**
+     * Sets Port on which the database server is running
+     * @param {String} port Port on which the database server is running
+     */
+    setPort(port) {
+        this['port'] = port;
+    }
+/**
+     * Returns The kind of instance the database belongs to
+     * @return {String}
+     */
+    getInstanceType() {
+        return this.instance_type;
+    }
+
+    /**
+     * Sets The kind of instance the database belongs to
+     * @param {String} instanceType The kind of instance the database belongs to
+     */
+    setInstanceType(instanceType) {
+        this['instance_type'] = instanceType;
+    }
+/**
+     * Returns The type of database
+     * @return {module:model/InlineResponse2008.LanguageEnum}
+     */
+    getLanguage() {
+        return this.language;
+    }
+
+    /**
+     * Sets The type of database
+     * @param {module:model/InlineResponse2008.LanguageEnum} language The type of database
+     */
+    setLanguage(language) {
+        this['language'] = language;
     }
 
 }
@@ -93,12 +238,82 @@ class InlineResponse2008 {
 InlineResponse2008.prototype['success'] = undefined;
 
 /**
- * @member {Array.<module:model/CreatedDatabase>} data
+ * Name of the database
+ * @member {String} name
  */
-InlineResponse2008.prototype['data'] = undefined;
+InlineResponse2008.prototype['name'] = undefined;
+
+/**
+ * Password of the database
+ * @member {String} password
+ */
+InlineResponse2008.prototype['password'] = undefined;
+
+/**
+ * Username of the database
+ * @member {String} user
+ */
+InlineResponse2008.prototype['user'] = undefined;
+
+/**
+ * Owner of the database
+ * @member {String} owner
+ */
+InlineResponse2008.prototype['owner'] = undefined;
+
+/**
+ * The domain name of the database (DNS entry is managed by Hikari 💡)
+ * @member {String} db_url
+ */
+InlineResponse2008.prototype['db_url'] = undefined;
+
+/**
+ * IPv4 address of the node where the database is deployed
+ * @member {String} host_ip
+ */
+InlineResponse2008.prototype['host_ip'] = undefined;
+
+/**
+ * Port on which the database server is running
+ * @member {String} port
+ */
+InlineResponse2008.prototype['port'] = undefined;
+
+/**
+ * The kind of instance the database belongs to
+ * @member {String} instance_type
+ */
+InlineResponse2008.prototype['instance_type'] = undefined;
+
+/**
+ * The type of database
+ * @member {module:model/InlineResponse2008.LanguageEnum} language
+ */
+InlineResponse2008.prototype['language'] = undefined;
 
 
 
+
+
+/**
+ * Allowed values for the <code>language</code> property.
+ * @enum {String}
+ * @readonly
+ */
+InlineResponse2008['LanguageEnum'] = {
+
+    /**
+     * value: "mysql"
+     * @const
+     */
+    "mysql": "mysql",
+
+    /**
+     * value: "mongodb"
+     * @const
+     */
+    "mongodb": "mongodb"
+};
 
 
 

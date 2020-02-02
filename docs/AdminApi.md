@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 ## deleteAppByAdmin
 
-> InlineResponse2003 deleteAppByAdmin(authorization, app)
+> InlineResponse2004 deleteAppByAdmin(authorization, app)
 
 Delete an application
 
@@ -30,10 +30,6 @@ Delete an application
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AdminApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -56,11 +52,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -70,7 +66,7 @@ Name | Type | Description  | Notes
 
 ## deleteDbByAdmin
 
-> InlineResponse2003 deleteDbByAdmin(authorization, db)
+> InlineResponse2004 deleteDbByAdmin(authorization, db)
 
 Delete a single database
 
@@ -78,10 +74,6 @@ Delete a single database
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AdminApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -104,11 +96,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -118,7 +110,7 @@ Name | Type | Description  | Notes
 
 ## deleteUserByAdmin
 
-> InlineResponse2003 deleteUserByAdmin(authorization, userEmail)
+> InlineResponse2004 deleteUserByAdmin(authorization, userEmail)
 
 Delete a single user
 
@@ -126,10 +118,6 @@ Delete a single user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AdminApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -152,11 +140,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -166,7 +154,7 @@ Name | Type | Description  | Notes
 
 ## fetchAppByAdmin
 
-> InlineResponse2002 fetchAppByAdmin(authorization, app)
+> InlineResponse2003 fetchAppByAdmin(authorization, app)
 
 Fetch a single application
 
@@ -174,10 +162,6 @@ Fetch a single application
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AdminApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -200,11 +184,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -214,7 +198,7 @@ Name | Type | Description  | Notes
 
 ## fetchAppsByAdmin
 
-> InlineResponse2002 fetchAppsByAdmin(authorization, opts)
+> InlineResponse2003 fetchAppsByAdmin(authorization, opts)
 
 Fetch all applications with/without a filter defined by query params
 
@@ -222,10 +206,6 @@ Fetch all applications with/without a filter defined by query params
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AdminApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -262,11 +242,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -276,7 +256,7 @@ Name | Type | Description  | Notes
 
 ## fetchDbByAdmin
 
-> InlineResponse2008 fetchDbByAdmin(authorization, db)
+> InlineResponse2009 fetchDbByAdmin(authorization, db)
 
 Fetch a single database
 
@@ -284,10 +264,6 @@ Fetch a single database
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AdminApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -310,11 +286,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2008**](InlineResponse2008.md)
+[**InlineResponse2009**](InlineResponse2009.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -324,7 +300,7 @@ Name | Type | Description  | Notes
 
 ## fetchDbsByAdmin
 
-> InlineResponse2008 fetchDbsByAdmin(authorization, opts)
+> InlineResponse2009 fetchDbsByAdmin(authorization, opts)
 
 Fetch all databases with/without a filter defined by query params
 
@@ -332,10 +308,6 @@ Fetch all databases with/without a filter defined by query params
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AdminApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -370,11 +342,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2008**](InlineResponse2008.md)
+[**InlineResponse2009**](InlineResponse2009.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -384,7 +356,7 @@ Name | Type | Description  | Notes
 
 ## fetchNodeByAdmin
 
-> InlineResponse20014 fetchNodeByAdmin(authorization, type)
+> InlineResponse20015 fetchNodeByAdmin(authorization, type)
 
 Fetch bind addresses(IP:Port) of a single microservice on all nodes
 
@@ -392,10 +364,6 @@ Fetch bind addresses(IP:Port) of a single microservice on all nodes
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AdminApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -418,11 +386,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20014**](InlineResponse20014.md)
+[**InlineResponse20015**](InlineResponse20015.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -432,7 +400,7 @@ Name | Type | Description  | Notes
 
 ## fetchNodesByAdmin
 
-> InlineResponse20013 fetchNodesByAdmin(authorization)
+> InlineResponse20014 fetchNodesByAdmin(authorization)
 
 Fetch bind addresses(IP:Port) of all microservices on all nodes
 
@@ -440,10 +408,6 @@ Fetch bind addresses(IP:Port) of all microservices on all nodes
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AdminApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -464,11 +428,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20013**](InlineResponse20013.md)
+[**InlineResponse20014**](InlineResponse20014.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -478,7 +442,7 @@ Name | Type | Description  | Notes
 
 ## fetchUserByAdmin
 
-> InlineResponse20012 fetchUserByAdmin(authorization, userEmail)
+> InlineResponse20013 fetchUserByAdmin(authorization, userEmail)
 
 Fetch a single user
 
@@ -486,10 +450,6 @@ Fetch a single user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AdminApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -512,11 +472,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20012**](InlineResponse20012.md)
+[**InlineResponse20013**](InlineResponse20013.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -526,7 +486,7 @@ Name | Type | Description  | Notes
 
 ## fetchUsersByAdmin
 
-> InlineResponse20012 fetchUsersByAdmin(authorization, opts)
+> InlineResponse20013 fetchUsersByAdmin(authorization, opts)
 
 Fetch all users with/without a filter defined by query params
 
@@ -534,10 +494,6 @@ Fetch all users with/without a filter defined by query params
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AdminApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -566,11 +522,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20012**](InlineResponse20012.md)
+[**InlineResponse20013**](InlineResponse20013.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -580,7 +536,7 @@ Name | Type | Description  | Notes
 
 ## grantSuperuserPrivilege
 
-> InlineResponse2003 grantSuperuserPrivilege(authorization, userEmail)
+> InlineResponse2004 grantSuperuserPrivilege(authorization, userEmail)
 
 Grant superuser privileges to a single user
 
@@ -588,10 +544,6 @@ Grant superuser privileges to a single user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AdminApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -614,11 +566,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -628,7 +580,7 @@ Name | Type | Description  | Notes
 
 ## revokeSuperuserPrivilege
 
-> InlineResponse2003 revokeSuperuserPrivilege(authorization, userEmail)
+> InlineResponse2004 revokeSuperuserPrivilege(authorization, userEmail)
 
 Revoke superuser privileges from a single user
 
@@ -636,10 +588,6 @@ Revoke superuser privileges from a single user
 
 ```javascript
 import GasperKazeApi from 'gasper_kaze_api';
-let defaultClient = GasperKazeApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new GasperKazeApi.AdminApi();
 let authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // String | Bearer Token Authentication
@@ -662,11 +610,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 

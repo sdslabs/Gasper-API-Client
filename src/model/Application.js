@@ -14,7 +14,7 @@
 import ApiClient from '../ApiClient';
 import Context from './Context';
 import Git from './Git';
-import InlineResponse2001Resources from './InlineResponse2001Resources';
+import InlineResponse2002Resources from './InlineResponse2002Resources';
 
 /**
  * The Application model module.
@@ -74,7 +74,7 @@ class Application {
                 obj['env'] = ApiClient.convertToType(data['env'], {'String': 'String'});
             }
             if (data.hasOwnProperty('resources')) {
-                obj['resources'] = InlineResponse2001Resources.constructFromObject(data['resources']);
+                obj['resources'] = InlineResponse2002Resources.constructFromObject(data['resources']);
             }
         }
         return obj;
@@ -152,14 +152,14 @@ class Application {
         this['env'] = env;
     }
 /**
-     * @return {module:model/InlineResponse2001Resources}
+     * @return {module:model/InlineResponse2002Resources}
      */
     getResources() {
         return this.resources;
     }
 
     /**
-     * @param {module:model/InlineResponse2001Resources} resources
+     * @param {module:model/InlineResponse2002Resources} resources
      */
     setResources(resources) {
         this['resources'] = resources;
@@ -196,7 +196,7 @@ Application.prototype['context'] = undefined;
 Application.prototype['env'] = undefined;
 
 /**
- * @member {module:model/InlineResponse2001Resources} resources
+ * @member {module:model/InlineResponse2002Resources} resources
  */
 Application.prototype['resources'] = undefined;
 

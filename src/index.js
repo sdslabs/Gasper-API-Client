@@ -28,8 +28,9 @@ import InlineResponse20011 from './model/InlineResponse20011';
 import InlineResponse20012 from './model/InlineResponse20012';
 import InlineResponse20013 from './model/InlineResponse20013';
 import InlineResponse20014 from './model/InlineResponse20014';
-import InlineResponse2001Resources from './model/InlineResponse2001Resources';
+import InlineResponse20015 from './model/InlineResponse20015';
 import InlineResponse2002 from './model/InlineResponse2002';
+import InlineResponse2002Resources from './model/InlineResponse2002Resources';
 import InlineResponse2003 from './model/InlineResponse2003';
 import InlineResponse2004 from './model/InlineResponse2004';
 import InlineResponse2005 from './model/InlineResponse2005';
@@ -40,6 +41,7 @@ import InlineResponse2009 from './model/InlineResponse2009';
 import InlineResponse400 from './model/InlineResponse400';
 import InlineResponse401 from './model/InlineResponse401';
 import InlineResponse500 from './model/InlineResponse500';
+import Instances from './model/Instances';
 import Login from './model/Login';
 import LoginResponse from './model/LoginResponse';
 import Metrics from './model/Metrics';
@@ -48,6 +50,7 @@ import AdminApi from './api/AdminApi';
 import AppsApi from './api/AppsApi';
 import AuthApi from './api/AuthApi';
 import DbsApi from './api/DbsApi';
+import InstancesApi from './api/InstancesApi';
 import UserApi from './api/UserApi';
 
 
@@ -180,16 +183,22 @@ export {
     InlineResponse20014,
 
     /**
-     * The InlineResponse2001Resources model constructor.
-     * @property {module:model/InlineResponse2001Resources}
+     * The InlineResponse20015 model constructor.
+     * @property {module:model/InlineResponse20015}
      */
-    InlineResponse2001Resources,
+    InlineResponse20015,
 
     /**
      * The InlineResponse2002 model constructor.
      * @property {module:model/InlineResponse2002}
      */
     InlineResponse2002,
+
+    /**
+     * The InlineResponse2002Resources model constructor.
+     * @property {module:model/InlineResponse2002Resources}
+     */
+    InlineResponse2002Resources,
 
     /**
      * The InlineResponse2003 model constructor.
@@ -252,6 +261,12 @@ export {
     InlineResponse500,
 
     /**
+     * The Instances model constructor.
+     * @property {module:model/Instances}
+     */
+    Instances,
+
+    /**
      * The Login model constructor.
      * @property {module:model/Login}
      */
@@ -298,6 +313,12 @@ export {
     * @property {module:api/DbsApi}
     */
     DbsApi,
+
+    /**
+    * The InstancesApi service constructor.
+    * @property {module:api/InstancesApi}
+    */
+    InstancesApi,
 
     /**
     * The UserApi service constructor.

@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import CreatedDatabase from './CreatedDatabase';
 
 /**
  * The InlineResponse2009 model module.
@@ -50,14 +51,8 @@ class InlineResponse2009 {
             if (data.hasOwnProperty('success')) {
                 obj['success'] = ApiClient.convertToType(data['success'], 'Boolean');
             }
-            if (data.hasOwnProperty('username')) {
-                obj['username'] = ApiClient.convertToType(data['username'], 'String');
-            }
-            if (data.hasOwnProperty('email')) {
-                obj['email'] = ApiClient.convertToType(data['email'], 'String');
-            }
-            if (data.hasOwnProperty('admin')) {
-                obj['admin'] = ApiClient.convertToType(data['admin'], 'Boolean');
+            if (data.hasOwnProperty('data')) {
+                obj['data'] = ApiClient.convertToType(data['data'], [CreatedDatabase]);
             }
         }
         return obj;
@@ -77,43 +72,17 @@ class InlineResponse2009 {
         this['success'] = success;
     }
 /**
-     * @return {String}
+     * @return {Array.<module:model/CreatedDatabase>}
      */
-    getUsername() {
-        return this.username;
+    getData() {
+        return this.data;
     }
 
     /**
-     * @param {String} username
+     * @param {Array.<module:model/CreatedDatabase>} data
      */
-    setUsername(username) {
-        this['username'] = username;
-    }
-/**
-     * @return {String}
-     */
-    getEmail() {
-        return this.email;
-    }
-
-    /**
-     * @param {String} email
-     */
-    setEmail(email) {
-        this['email'] = email;
-    }
-/**
-     * @return {Boolean}
-     */
-    getAdmin() {
-        return this.admin;
-    }
-
-    /**
-     * @param {Boolean} admin
-     */
-    setAdmin(admin) {
-        this['admin'] = admin;
+    setData(data) {
+        this['data'] = data;
     }
 
 }
@@ -124,19 +93,9 @@ class InlineResponse2009 {
 InlineResponse2009.prototype['success'] = undefined;
 
 /**
- * @member {String} username
+ * @member {Array.<module:model/CreatedDatabase>} data
  */
-InlineResponse2009.prototype['username'] = undefined;
-
-/**
- * @member {String} email
- */
-InlineResponse2009.prototype['email'] = undefined;
-
-/**
- * @member {Boolean} admin
- */
-InlineResponse2009.prototype['admin'] = undefined;
+InlineResponse2009.prototype['data'] = undefined;
 
 
 

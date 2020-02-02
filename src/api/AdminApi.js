@@ -13,12 +13,12 @@
 
 
 import ApiClient from "../ApiClient";
-import InlineResponse20012 from '../model/InlineResponse20012';
 import InlineResponse20013 from '../model/InlineResponse20013';
 import InlineResponse20014 from '../model/InlineResponse20014';
-import InlineResponse2002 from '../model/InlineResponse2002';
+import InlineResponse20015 from '../model/InlineResponse20015';
 import InlineResponse2003 from '../model/InlineResponse2003';
-import InlineResponse2008 from '../model/InlineResponse2008';
+import InlineResponse2004 from '../model/InlineResponse2004';
+import InlineResponse2009 from '../model/InlineResponse2009';
 import InlineResponse400 from '../model/InlineResponse400';
 import InlineResponse401 from '../model/InlineResponse401';
 import InlineResponse500 from '../model/InlineResponse500';
@@ -47,7 +47,7 @@ export default class AdminApi {
      * Delete an application
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2004} and HTTP response
      */
     deleteAppByAdminWithHttpInfo(authorization, app) {
       let postBody = null;
@@ -71,10 +71,10 @@ export default class AdminApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2003;
+      let returnType = InlineResponse2004;
       return this.apiClient.callApi(
         '/admin/apps/{app}', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -86,7 +86,7 @@ export default class AdminApi {
      * Delete an application
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2004}
      */
     deleteAppByAdmin(authorization, app) {
       return this.deleteAppByAdminWithHttpInfo(authorization, app)
@@ -100,7 +100,7 @@ export default class AdminApi {
      * Delete a single database
      * @param {String} authorization Bearer Token Authentication
      * @param {String} db Name of the database
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2004} and HTTP response
      */
     deleteDbByAdminWithHttpInfo(authorization, db) {
       let postBody = null;
@@ -124,10 +124,10 @@ export default class AdminApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2003;
+      let returnType = InlineResponse2004;
       return this.apiClient.callApi(
         '/admin/dbs/{db}', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -139,7 +139,7 @@ export default class AdminApi {
      * Delete a single database
      * @param {String} authorization Bearer Token Authentication
      * @param {String} db Name of the database
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2004}
      */
     deleteDbByAdmin(authorization, db) {
       return this.deleteDbByAdminWithHttpInfo(authorization, db)
@@ -153,7 +153,7 @@ export default class AdminApi {
      * Delete a single user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} userEmail Email ID of the user
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2004} and HTTP response
      */
     deleteUserByAdminWithHttpInfo(authorization, userEmail) {
       let postBody = null;
@@ -177,10 +177,10 @@ export default class AdminApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2003;
+      let returnType = InlineResponse2004;
       return this.apiClient.callApi(
         '/admin/users/{userEmail}', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -192,7 +192,7 @@ export default class AdminApi {
      * Delete a single user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} userEmail Email ID of the user
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2004}
      */
     deleteUserByAdmin(authorization, userEmail) {
       return this.deleteUserByAdminWithHttpInfo(authorization, userEmail)
@@ -206,7 +206,7 @@ export default class AdminApi {
      * Fetch a single application
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2002} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
      */
     fetchAppByAdminWithHttpInfo(authorization, app) {
       let postBody = null;
@@ -230,10 +230,10 @@ export default class AdminApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2002;
+      let returnType = InlineResponse2003;
       return this.apiClient.callApi(
         '/admin/apps/{app}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -245,7 +245,7 @@ export default class AdminApi {
      * Fetch a single application
      * @param {String} authorization Bearer Token Authentication
      * @param {String} app The name of the application
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2002}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
      */
     fetchAppByAdmin(authorization, app) {
       return this.fetchAppByAdminWithHttpInfo(authorization, app)
@@ -266,7 +266,7 @@ export default class AdminApi {
      * @param {String} opts.hostIp IPv4 address of the node in which the application is deployed
      * @param {String} opts.gitUrl Application's Git Repository URL
      * @param {String} opts.containerPort Port assigned by the node to the application's docker container
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2002} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
      */
     fetchAppsByAdminWithHttpInfo(authorization, opts) {
       opts = opts || {};
@@ -293,10 +293,10 @@ export default class AdminApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2002;
+      let returnType = InlineResponse2003;
       return this.apiClient.callApi(
         '/admin/apps', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -315,7 +315,7 @@ export default class AdminApi {
      * @param {String} opts.hostIp IPv4 address of the node in which the application is deployed
      * @param {String} opts.gitUrl Application's Git Repository URL
      * @param {String} opts.containerPort Port assigned by the node to the application's docker container
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2002}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
      */
     fetchAppsByAdmin(authorization, opts) {
       return this.fetchAppsByAdminWithHttpInfo(authorization, opts)
@@ -329,7 +329,7 @@ export default class AdminApi {
      * Fetch a single database
      * @param {String} authorization Bearer Token Authentication
      * @param {String} db Name of the database
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2008} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2009} and HTTP response
      */
     fetchDbByAdminWithHttpInfo(authorization, db) {
       let postBody = null;
@@ -353,10 +353,10 @@ export default class AdminApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2008;
+      let returnType = InlineResponse2009;
       return this.apiClient.callApi(
         '/admin/dbs/{db}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -368,7 +368,7 @@ export default class AdminApi {
      * Fetch a single database
      * @param {String} authorization Bearer Token Authentication
      * @param {String} db Name of the database
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2008}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2009}
      */
     fetchDbByAdmin(authorization, db) {
       return this.fetchDbByAdminWithHttpInfo(authorization, db)
@@ -388,7 +388,7 @@ export default class AdminApi {
      * @param {module:model/String} opts.language Type of the database
      * @param {String} opts.hostIp IPv4 address of the node in which the database is deployed
      * @param {String} opts.containerPort Port assigned by the node to the database's docker container
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2008} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2009} and HTTP response
      */
     fetchDbsByAdminWithHttpInfo(authorization, opts) {
       opts = opts || {};
@@ -414,10 +414,10 @@ export default class AdminApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2008;
+      let returnType = InlineResponse2009;
       return this.apiClient.callApi(
         '/admin/dbs', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -435,7 +435,7 @@ export default class AdminApi {
      * @param {module:model/String} opts.language Type of the database
      * @param {String} opts.hostIp IPv4 address of the node in which the database is deployed
      * @param {String} opts.containerPort Port assigned by the node to the database's docker container
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2008}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2009}
      */
     fetchDbsByAdmin(authorization, opts) {
       return this.fetchDbsByAdminWithHttpInfo(authorization, opts)
@@ -449,7 +449,7 @@ export default class AdminApi {
      * Fetch bind addresses(IP:Port) of a single microservice on all nodes
      * @param {String} authorization Bearer Token Authentication
      * @param {module:model/String} type Type of microservice
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20014} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20015} and HTTP response
      */
     fetchNodeByAdminWithHttpInfo(authorization, type) {
       let postBody = null;
@@ -473,10 +473,10 @@ export default class AdminApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse20014;
+      let returnType = InlineResponse20015;
       return this.apiClient.callApi(
         '/admin/nodes/{type}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -488,7 +488,7 @@ export default class AdminApi {
      * Fetch bind addresses(IP:Port) of a single microservice on all nodes
      * @param {String} authorization Bearer Token Authentication
      * @param {module:model/String} type Type of microservice
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20014}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20015}
      */
     fetchNodeByAdmin(authorization, type) {
       return this.fetchNodeByAdminWithHttpInfo(authorization, type)
@@ -501,7 +501,7 @@ export default class AdminApi {
     /**
      * Fetch bind addresses(IP:Port) of all microservices on all nodes
      * @param {String} authorization Bearer Token Authentication
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20013} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20014} and HTTP response
      */
     fetchNodesByAdminWithHttpInfo(authorization) {
       let postBody = null;
@@ -520,10 +520,10 @@ export default class AdminApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse20013;
+      let returnType = InlineResponse20014;
       return this.apiClient.callApi(
         '/admin/nodes', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -534,7 +534,7 @@ export default class AdminApi {
     /**
      * Fetch bind addresses(IP:Port) of all microservices on all nodes
      * @param {String} authorization Bearer Token Authentication
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20013}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20014}
      */
     fetchNodesByAdmin(authorization) {
       return this.fetchNodesByAdminWithHttpInfo(authorization)
@@ -548,7 +548,7 @@ export default class AdminApi {
      * Fetch a single user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} userEmail Email ID of the user
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20012} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20013} and HTTP response
      */
     fetchUserByAdminWithHttpInfo(authorization, userEmail) {
       let postBody = null;
@@ -572,10 +572,10 @@ export default class AdminApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse20012;
+      let returnType = InlineResponse20013;
       return this.apiClient.callApi(
         '/admin/users/{userEmail}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -587,7 +587,7 @@ export default class AdminApi {
      * Fetch a single user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} userEmail Email ID of the user
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20012}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20013}
      */
     fetchUserByAdmin(authorization, userEmail) {
       return this.fetchUserByAdminWithHttpInfo(authorization, userEmail)
@@ -604,7 +604,7 @@ export default class AdminApi {
      * @param {String} opts.username Name of the user
      * @param {String} opts.email Email of the user
      * @param {Boolean} opts.admin Field denoting superuser privileges
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20012} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse20013} and HTTP response
      */
     fetchUsersByAdminWithHttpInfo(authorization, opts) {
       opts = opts || {};
@@ -627,10 +627,10 @@ export default class AdminApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse20012;
+      let returnType = InlineResponse20013;
       return this.apiClient.callApi(
         '/admin/users', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -645,7 +645,7 @@ export default class AdminApi {
      * @param {String} opts.username Name of the user
      * @param {String} opts.email Email of the user
      * @param {Boolean} opts.admin Field denoting superuser privileges
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20012}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse20013}
      */
     fetchUsersByAdmin(authorization, opts) {
       return this.fetchUsersByAdminWithHttpInfo(authorization, opts)
@@ -659,7 +659,7 @@ export default class AdminApi {
      * Grant superuser privileges to a single user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} userEmail Email ID of the user
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2004} and HTTP response
      */
     grantSuperuserPrivilegeWithHttpInfo(authorization, userEmail) {
       let postBody = null;
@@ -683,10 +683,10 @@ export default class AdminApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2003;
+      let returnType = InlineResponse2004;
       return this.apiClient.callApi(
         '/admin/users/{userEmail}/grant', 'PATCH',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -698,7 +698,7 @@ export default class AdminApi {
      * Grant superuser privileges to a single user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} userEmail Email ID of the user
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2004}
      */
     grantSuperuserPrivilege(authorization, userEmail) {
       return this.grantSuperuserPrivilegeWithHttpInfo(authorization, userEmail)
@@ -712,7 +712,7 @@ export default class AdminApi {
      * Revoke superuser privileges from a single user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} userEmail Email ID of the user
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2003} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/InlineResponse2004} and HTTP response
      */
     revokeSuperuserPrivilegeWithHttpInfo(authorization, userEmail) {
       let postBody = null;
@@ -736,10 +736,10 @@ export default class AdminApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = InlineResponse2003;
+      let returnType = InlineResponse2004;
       return this.apiClient.callApi(
         '/admin/users/{userEmail}/revoke', 'PATCH',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -751,7 +751,7 @@ export default class AdminApi {
      * Revoke superuser privileges from a single user
      * @param {String} authorization Bearer Token Authentication
      * @param {String} userEmail Email ID of the user
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2003}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2004}
      */
     revokeSuperuserPrivilege(authorization, userEmail) {
       return this.revokeSuperuserPrivilegeWithHttpInfo(authorization, userEmail)

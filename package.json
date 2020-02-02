@@ -1,13 +1,13 @@
 {
   "name": "gasper_kaze_api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Handles_authentication_creation_management_of_applications_databases_users_and_also_provides_a_superuser_API__brbr_Only_a_superuser_can_avail_the_superuser_API__A_superuser_can_grant_revoke_superuser_privileges_to_other_users__A_default__superuser_is_created_every_time_a_Gasper_instance_is_launched_whose_credentials_are_defined_in_the_admin_section_of_config_toml_the_main_configuration_file__A_sample_configuration_file_is_available__here_https__github_com_sdslabs_gasper_blob_develop_config_sample_tomlL37_brbrNote__Normally_the_applications_and_databases_can_only_be_managed_by_their_owners_but_the_superuser_can_bypass_that_check_brbrPS__If_you_want_to_programmatically_generate_a_client_for_this_API_you_can_find_the_corresponding_OpenAPI_specifications__here_https__github_com_sdslabs_gasper_tree_develop_docs_content_api_specs__We_recommend_using__OpenAPI_Generator_https__openapi_generator_tech__for_generating_clients_",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist",
     "prepack": "npm run build",
-    "test": "mocha --compilers js:@babel/register --recursive"
+    "test": "mocha --require @babel/register --recursive"
   },
   "browser": {
     "fs": false

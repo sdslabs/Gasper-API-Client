@@ -9,6 +9,6 @@ Name | Type | Description | Notes
 **git** | [**Git**](Git.md) |  | 
 **context** | [**Context**](Context.md) |  | 
 **env** | **{String: String}** | Environment variables required by the application | [optional] 
-**resources** | [**InlineResponse2001Resources**](InlineResponse2001Resources.md) |  | [optional] 
+**resources** | [**InlineResponse2002Resources**](InlineResponse2002Resources.md) |  | [optional] 
 
 

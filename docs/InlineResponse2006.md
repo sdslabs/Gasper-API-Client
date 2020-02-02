@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **success** | **Boolean** |  | [optional] 
-**data** | [**[Metrics]**](Metrics.md) |  | [optional] 
+**data** | **[String]** |  | [optional] 
 
 

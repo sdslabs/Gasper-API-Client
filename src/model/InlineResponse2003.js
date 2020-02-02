@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import CreatedApplication from './CreatedApplication';
 
 /**
  * The InlineResponse2003 model module.
@@ -50,6 +51,9 @@ class InlineResponse2003 {
             if (data.hasOwnProperty('success')) {
                 obj['success'] = ApiClient.convertToType(data['success'], 'Boolean');
             }
+            if (data.hasOwnProperty('data')) {
+                obj['data'] = ApiClient.convertToType(data['data'], [CreatedApplication]);
+            }
         }
         return obj;
     }
@@ -67,6 +71,19 @@ class InlineResponse2003 {
     setSuccess(success) {
         this['success'] = success;
     }
+/**
+     * @return {Array.<module:model/CreatedApplication>}
+     */
+    getData() {
+        return this.data;
+    }
+
+    /**
+     * @param {Array.<module:model/CreatedApplication>} data
+     */
+    setData(data) {
+        this['data'] = data;
+    }
 
 }
 
@@ -74,6 +91,11 @@ class InlineResponse2003 {
  * @member {Boolean} success
  */
 InlineResponse2003.prototype['success'] = undefined;
+
+/**
+ * @member {Array.<module:model/CreatedApplication>} data
+ */
+InlineResponse2003.prototype['data'] = undefined;
 
 
 

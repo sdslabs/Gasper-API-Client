@@ -60,20 +60,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property username (base name: "username")', function() {
-      // uncomment below and update the code to test the property username
-      //var instane = new GasperKazeApi.InlineResponse2009();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property email (base name: "email")', function() {
-      // uncomment below and update the code to test the property email
-      //var instane = new GasperKazeApi.InlineResponse2009();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property admin (base name: "admin")', function() {
-      // uncomment below and update the code to test the property admin
+    it('should have the property data (base name: "data")', function() {
+      // uncomment below and update the code to test the property data
       //var instane = new GasperKazeApi.InlineResponse2009();
       //expect(instance).to.be();
     });

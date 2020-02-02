@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new GasperKazeApi.InlineResponse2001();
+    instance = new GasperKazeApi.InlineResponse20015();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,22 @@
       object[property] = value;
   }
 
-  describe('InlineResponse2001', function() {
-    it('should create an instance of InlineResponse2001', function() {
-      // uncomment below and update the code to test InlineResponse2001
-      //var instane = new GasperKazeApi.InlineResponse2001();
-      //expect(instance).to.be.a(GasperKazeApi.InlineResponse2001);
+  describe('InlineResponse20015', function() {
+    it('should create an instance of InlineResponse20015', function() {
+      // uncomment below and update the code to test InlineResponse20015
+      //var instane = new GasperKazeApi.InlineResponse20015();
+      //expect(instance).to.be.a(GasperKazeApi.InlineResponse20015);
     });
 
     it('should have the property success (base name: "success")', function() {
       // uncomment below and update the code to test the property success
-      //var instane = new GasperKazeApi.InlineResponse2001();
+      //var instane = new GasperKazeApi.InlineResponse20015();
       //expect(instance).to.be();
     });
 
-    it('should have the property data (base name: "data")', function() {
-      // uncomment below and update the code to test the property data
-      //var instane = new GasperKazeApi.InlineResponse2001();
+    it('should have the property kaze (base name: "kaze")', function() {
+      // uncomment below and update the code to test the property kaze
+      //var instane = new GasperKazeApi.InlineResponse20015();
       //expect(instance).to.be();
     });
 
