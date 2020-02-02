@@ -72,7 +72,7 @@ export default class DbsApi {
       let formParams = {
       };
 
-      let authNames = [];
+      let authNames = ['bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = InlineResponse2008;
@@ -127,7 +127,7 @@ export default class DbsApi {
       let formParams = {
       };
 
-      let authNames = [];
+      let authNames = ['bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = InlineResponse2004;
@@ -180,7 +180,7 @@ export default class DbsApi {
       let formParams = {
       };
 
-      let authNames = [];
+      let authNames = ['bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = InlineResponse2009;
@@ -227,7 +227,7 @@ export default class DbsApi {
       let formParams = {
       };
 
-      let authNames = [];
+      let authNames = ['bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = InlineResponse2009;
@@ -285,7 +285,7 @@ export default class DbsApi {
       let formParams = {
       };
 
-      let authNames = [];
+      let authNames = ['bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = InlineResponse2004;

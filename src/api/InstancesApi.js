@@ -60,7 +60,7 @@ export default class InstancesApi {
       let formParams = {
       };
 
-      let authNames = ['bearer'];
+      let authNames = ['bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = InlineResponse2001;

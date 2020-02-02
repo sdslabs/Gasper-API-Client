@@ -103,6 +103,10 @@ Please follow the [installation](#installation) instruction and execute the foll
 ```javascript
 var GasperKazeApi = require('gasper_kaze_api');
 
+var defaultClient = GasperKazeApi.ApiClient.instance;
+// Configure Bearer (JWT) access token for authorization: bearerAuth
+var bearerAuth = defaultClient.authentications['bearerAuth'];
+bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 var api = new GasperKazeApi.AdminApi()
 var authorization = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9; // {String} Bearer Token Authentication
@@ -200,7 +204,7 @@ Class | Method | HTTP request | Description
 
 
 
-### bearer
+### bearerAuth
 
 - **Type**: Bearer authentication (JWT)
 
