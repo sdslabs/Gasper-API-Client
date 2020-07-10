@@ -37,6 +37,13 @@ class ApiClient {
         this.basePath = 'http://localhost:3000'.replace(/\/+$/, '');
 
         /**
+         * The base URL for metrics streamer service
+         * @type {String}
+         * @default http://localhost:3333
+         */
+        this.metricsBasePath = 'http://localhost:3333'.replace(/\/+$/, '');
+
+        /**
          * The authentication methods to be included for all API calls.
          * @type {Array.<String>}
          */

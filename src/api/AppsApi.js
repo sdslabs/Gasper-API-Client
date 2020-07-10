@@ -352,7 +352,8 @@ export default class AppsApi {
         'weeks': opts['weeks'],
         'months': opts['months'],
         'years': opts['years'],
-        'decades': opts['decades']
+        'decades': opts['decades'],
+        'sparsity': opts['sparsity']
       };
       let headerParams = {
         'Authorization': authorization
@@ -384,13 +385,62 @@ export default class AppsApi {
      * @param {Number} opts.months Fetch metrics in the last **n** months
      * @param {Number} opts.years Fetch metrics in the last **n** years
      * @param {Number} opts.decades Fetch metrics in the last **n** decades
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2007}
+     * @param {String} opts.sparsity Fetch metrics logs with **x** interval
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/InlineResponse2006}
      */
     fetchMetricsByUser(authorization, app, opts) {
       return this.fetchMetricsByUserWithHttpInfo(authorization, app, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
+    }
+
+    /**
+     * Return event source for metrics of an application
+     * @param {String} app 
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.seconds Fetch metrics in the last **n** seconds
+     * @param {Number} opts.minutes Fetch metrics in the last **n** minutes
+     * @param {Number} opts.hours Fetch metrics in the last **n** hours
+     * @param {Number} opts.days Fetch metrics in the last **n** days
+     * @param {Number} opts.weeks Fetch metrics in the last **n** weeks
+     * @param {Number} opts.months Fetch metrics in the last **n** months
+     * @param {Number} opts.years Fetch metrics in the last **n** years
+     * @param {Number} opts.decades Fetch metrics in the last **n** decades
+     * @param {String} opts.sparsity Fetch metrics logs with **x** interval
+     */
+    MetricsEventSource(app, opts) {
+      opts = opts || {};
+      // verify the required parameter 'app' is set
+      if (app === undefined || app === null) {
+        throw new Error("Missing the required parameter 'app' when calling fetchMetricsByUser");
+      }
+
+      let pathParams = {
+        'app': app
+      };
+      let queryParams = {
+        'seconds': opts['seconds'],
+        'minutes': opts['minutes'],
+        'hours': opts['hours'],
+        'days': opts['days'],
+        'weeks': opts['weeks'],
+        'months': opts['months'],
+        'years': opts['years'],
+        'decades': opts['decades'],
+        'sparsity': opts['sparsity']
+      };
+      let headerParams = {
+        'Authorization': authorization
+      };
+      let formParams = {
+      };
+
+      let authNames = ['bearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      
+      return this.apiClient.buildURL('/apps/{app}/metrics', this.apiClient.metricsBasePath);
     }
 
 
