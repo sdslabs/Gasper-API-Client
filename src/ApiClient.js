@@ -122,10 +122,9 @@ class ApiClient {
     * @param {String} path The path to append to the base URL.
     * @param {Object} pathParams The parameter values to append.
     * @param {String} apiBasePath Base path defined in the path, operation level to override the default one
-    * @param {Object} queryParams The parameters value to pass in the query.
     * @returns {String} The encoded path with parameter values substituted.
     */
-    buildUrl(path, pathParams, apiBasePath,queryParams) {
+    buildUrl(path, pathParams, apiBasePath) {
         if (!path.match(/^\//)) {
             path = '/' + path;
         }
@@ -147,15 +146,8 @@ class ApiClient {
 
             return encodeURIComponent(value);
         });
-        var fullUrl = new URL(url)
-        for (key in queryParams) {
-          if (queryParams.hasOwnProperty(key)) {
-            if (queryParams[key]) {
-              fullUrl.searchParams.append(key, queryParams[key])
-            }
-          }
-        }
-        return String(fullUrl);
+
+        return url;
     }
 
     /**

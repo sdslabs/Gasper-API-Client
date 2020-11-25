@@ -364,7 +364,7 @@ export default class AppsApi {
       let authNames = ['bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = Object;
+      let returnType = InlineResponse2006;
       return this.apiClient.callApi(
         '/apps/{app}/metrics', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -430,32 +430,19 @@ export default class AppsApi {
         'decades': opts['decades'],
         'sparsity': opts['sparsity']
       };
+      let headerParams = {
+        'Authorization': authorization
+      };
+      let formParams = {
+      };
+
+      let authNames = ['bearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
       
-      return this.apiClient.buildUrl('/apps/{app}/metrics',pathParams, this.apiClient.basePath,queryParams);
+      return this.apiClient.buildURL('/apps/{app}/metrics', this.apiClient.metricsBasePath);
     }
-    /**
-    * Return stream source for metrics of an application
-    * @param {String} app
-    */
 
-    MetricsStreamSource(app) {
-      // verify the required parameter 'app' is set
-      if (app === undefined || app === null) {
-        throw new Error(
-          "Missing the required parameter 'app' when calling fetchMetricsByUser",
-        )
-      }
-
-      let pathParams = {
-        app: app,
-      }
-
-      return this.apiClient.buildUrl(
-        `/stream/{app}/metrics`,
-        pathParams,
-        this.apiClient.metricsBasePath,
-      )
-    }
 
     /**
      * Fetch a browser terminal instance for an application owned by a user
